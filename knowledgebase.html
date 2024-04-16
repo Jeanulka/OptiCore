@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">OptiCoreR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="main-navigation">
+          <!-- Header Logo -->
+          <div class="wraper">
+            <a href="/" class="logo">
+              <span class="header-logo-part">Opti</span>
+              <p>Core</p>
+              <p>R</p>
+            </a>
+          </div>
+
+          <!-- Header Menu -->
+          <ul class="nav-menu-list">
+            <li class="item">
+              <a href="./index.html" class="link nav-menu-link">Про нас</a>
+            </li>
+            <li class="item">
+              <a href="./services.html" class="link nav-menu-link">Послуги</a>
+              <ul class="nav-submenu-list">
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#business-processes"
+                    class="link nav-submenu-link"
+                    >Опис бізнес-процесів</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#opti-bp"
+                    class="link nav-submenu-link"
+                    >Оптимізація бізнес-процесів</a
+                  >
+                </li>
+
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#fin-models"
+                    class="link nav-submenu-link"
+                    >Фінансове моделювання</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#business-plan"
+                    class="link nav-submenu-link"
+                    >Написання бізнес-планів</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#education"
+                    class="link nav-submenu-link"
+                    >Навчання команд</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#trainings"
+                    class="link nav-submenu-link"
+                    >Тренінги</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="item">
+              <a
+                href="./initiatives.html"
+                class="link nav-menu-link current-page"
+                >Ініціативи</a
+              >
+              <ul class="nav-submenu-list">
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./initiatives.html#Mental-health"
+                    class="link nav-submenu-link"
+                    >Mental health</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./initiatives.html#womens-business"
+                    class="link nav-submenu-link"
+                    >Бізнес для жінок і про жінок</a
+                  >
+                </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./knowledgebase.html#Knowledgebase"
+                    class="link nav-submenu-link"
+                    >База знань</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="#" class="link nav-menu-link">Блог</a>
+            </li>
+            <li class="item">
+              <a href="#" class="link nav-menu-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="modal-btn">
+          <button type="button" class="btn" data-modal-open>
+            Консультація
+          </button>
+        </div>
+
+        <!-- Модальне вікно -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button type="button" class="btn-close" data-modal-close></button>
+            <button type="button" class="btn send">Відправити</button>
+          </div>
+        </div>
+        <!-- Модальне вікно end -->
+      </div>
+    </header>
+
+    <main>
+      <!-- Knowledgebase section -->
+      <section class="Knowledgebase">
+        <div class="container">
+          <h2 class="section-title" id="Knowledgebase">
+            База знань підприємця
+          </h2>
+          <p class="section-text">
+            Цей проект було створено для підтримки малого бізнесу і формалізації
+            знань в сфері управління, аналізу, побудови бізнес-процесів.
+          </p>
+          <p class="section-text">
+            Тут ви можете знайти як теоретичні, так і практичні знання з різних
+            питань та сфер ведення бізнесу. Деякі знання є безкоштовні, деякі ви
+            можете придбати за символічну плату.
+          </p>
+          <p class="section-text">
+            Ви обираєте цікавий вам розділ за тематикою та напрямом і можете
+            скористатися наданою інформацією.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="left-part">
+          <address class="address">
+            <p class="address-text">м. Київ</p>
+            <ul class="list">
+              <li class="address-item">
+                <a class="link" href="mailto:opticorer@gmail.com"
+                  >opticorer@gmail.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="link" href="tel:+380964355652">+380964355652</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer Contacts -->
+        <div class="central-part">
+          <!-- Footer Logo -->
+          <a href="/" class="logo"
+            >OptiCore<span class="footer-logo-part">R</span></a
+          >
+        </div>
+        <!-- Footer Social -->
+        <div class="right-part">
+          <ul class="item-social">
+            <li class="social-link-item">
+              <a
+                class="social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на інстаграм"
+                ><svg class="social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-link-item">
+              <a
+                class="social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на фейсбук"
+              >
+                <svg class="social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a
+                class="social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посиалння на лінкедін"
+              >
+                <svg class="social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
