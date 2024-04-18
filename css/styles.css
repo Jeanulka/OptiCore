@@ -1,6 +1,6 @@
-/* ------------------
+/* ========================
 Основні кольори
-------------------- */
+=========================== */
 :root {
     /* Кольори для фону */
     --background-color: #FFFFFF;
@@ -22,9 +22,9 @@
 }
 
 
-/* -------------
+/* =============================
 Обнулення стилів 
----------------- */
+================================ */
 h2,
 h3,
 h4,
@@ -49,9 +49,9 @@ img {
     display: block;
 }
 
-/* ----------------------------
+/* =========================================
 Загальні стилі для body та його елементів
-------------------------------- */
+============================================ */
 body {
     font-family: Arsenal,
         sans-serif;
@@ -92,8 +92,7 @@ section:not(:last-child) {
 }
 
 .section-subtitle {
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
 
     text-align: left;
     font-size: 24px;
@@ -107,7 +106,7 @@ section:not(:last-child) {
     margin-bottom: 10px;
 
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.71;
     letter-spacing: 0.42px;
 
@@ -130,14 +129,22 @@ section:not(:last-child) {
 .accent {
     color: var(--text-color-accent);
     font-weight: 700;
+    font-size: 20px;
     /* &#8221;
     &#8220;
     &#39; */
 }
 
-/* ------------------------
+.accent-20px {
+    color: var(--text-color-accent);
+    font-weight: 700;
+    font-size: 22px;
+
+}
+
+/* ===========================
 Стилі для логотип
------------------------- */
+============================== */
 .logo {
     color: var(--primary-color);
     font-family: Arsenal, sans-serif;
@@ -285,9 +292,9 @@ Header
 }
 
 
-/* ---------------------
+/* =============================================
 Кнопка ЗАМОВИТИ/КОНСУЛЬТАЦІЯ модального вікна
---------------------- */
+================================================ */
 .modal-btn {
     margin: auto;
     margin-right: 0;
@@ -340,9 +347,9 @@ Header
     cursor: pointer;
 }
 
-/* ----------------------------------- */
-/* Модальне вікно */
-/* ----------------------------------- */
+/* ==================================================== */
+/* МОДАЛЬНЕ ВІКНО */
+/* ==================================================== */
 
 .backdrop {
     position: fixed;
@@ -385,9 +392,7 @@ Header
     transform: translate(-50%, -50%) scale(0);
 }
 
-/* -------------------
-Кнопка ЗАКРИТИ в Модальному вікні 
-----------------------*/
+/* ==== Кнопка ЗАКРИТИ в Модальному вікні ==== */
 .btn-close {
     position: absolute;
 
@@ -435,9 +440,9 @@ Header
 /* -------------------------------------------------------------------------- */
 
 
-/* ----------------------------------------------------------------------------
+/* ===========================
 Section Hero 
-------------------------------------------------------------------------------*/
+============================== */
 .hero {
     max-width: 1600px;
     height: 600px;
@@ -465,9 +470,7 @@ Section Hero
 }
 
 .hero-title {
-    margin-top: 0;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
 
     font-size: 44px;
@@ -478,32 +481,60 @@ Section Hero
     width: 696px;
 }
 
-/* Section About US */
-.about-us {
-    /* padding-bottom: 0; */
-}
+
+
+/* =========================
+About US page
+===========================*/
+/*  About US section */
+.about-us {}
 
 /*  Realisation section */
-.realisation {
-    /* padding-bottom: 0; */
-}
+.realisation {}
 
 /* Questions section */
 .questions {}
 
 
 
-/* ----------------------
-Business processes section 
----------------------------*/
-.business-processes {
-    /* padding-bottom: 0; */
+
+/* =========================
+Services page
+============================ */
+.services {
+    padding-top: 0;
+}
+
+.services-hero {
+    max-width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+
+
+    background-color: #C4C4C4;
+    /* 
+    background-image: linear-gradient(to right, rgba(40, 48, 58, 0.40), rgba(40, 48, 58, 0.40)),
+        url(../images/photo1713091965opti.jpg); */
+
+    background-image: linear-gradient(to right, rgba(208, 208, 208, 0.30), rgba(208, 208, 208, 0.0)),
+        url(../images/БП\ товар\ опт.jpg);
+
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: var(--secondary-color);
 }
 
 .services-hero-title {
     margin-top: 0;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
     text-align: center;
 
@@ -514,62 +545,75 @@ Business processes section
     text-transform: uppercase;
 }
 
-/* ----------------------
-Optimization Business processes section 
----------------------------*/
-.opti-bp {
-    /* padding-bottom: 0; */
+.services-reasons-container {
+    padding-bottom: 25px;
+    padding-top: 0;
+    padding-left: 25px;
 }
 
-/* ----------------------
-Fin-models section 
----------------------------*/
-.fin-models {
-    /* padding-bottom: 0; */
+.services-reasons-list {
+    display: flex;
+    align-items: center;
 }
 
-/* ----------------------
-Busines plan section 
----------------------------*/
-.business-plan {
-    /* padding-bottom: 0; */
+.services-reasons-list .section-text {
+    margin-bottom: 0px;
 }
 
-/* ----------------------
-Education section
----------------------------*/
-.education {
-    /* padding-bottom: 0; */
+.services-icon-bell {
+    margin-right: 20px;
+    rotate: 45deg;
+    fill: var(--primary-color);
 }
 
-/* ----------------------
-Trainings section
----------------------------*/
+
+/* Business processes section */
+.business-processes {}
+
+/* Optimization Business processes section */
+.opti-bp {}
+
+/* Fin-models section */
+.fin-models {}
+
+/* Busines plan section */
+.business-plan {}
+
+
+
+
+/* =========================
+Education page
+============================ */
+
+/* Education section */
+.education {}
+
+/* Trainings section */
 .trainings {}
 
 
 
 
-/* ----------------------
-Mental health section 
----------------------------*/
-.mental-health {
-    /* padding-bottom: 0; */
-}
+/* =========================
+Initiatives page
+============================ */
 
+/* Mental health section */
+.mental-health {}
 
-/* ----------------------
-Womens business section 
----------------------------*/
+/* Womens business section */
+.womens-business {}
+
+/* Veterans section */
 .womens-business {}
 
 
 
 
-
-/* --------------------------
+/* ============================
 Footer 
------------------------------*/
+=============================== */
 footer {
     background-color: var(--background-secondary-color);
     padding-top: 60px;
