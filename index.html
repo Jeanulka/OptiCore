@@ -44,13 +44,13 @@
             <li class="item">
               <a href="./services.html" class="link nav-menu-link">Послуги</a>
               <ul class="nav-submenu-list">
-                <li class="nav-submenu-list-item">
+                <!-- <li class="nav-submenu-list-item">
                   <a
                     href="./services.html#business-processes"
                     class="link nav-submenu-link"
                     >Опис бізнес-процесів</a
                   >
-                </li>
+                </li> -->
                 <li class="nav-submenu-list-item">
                   <a
                     href="./services.html#opti-bp"
@@ -161,11 +161,104 @@
         </div>
 
         <!-- Модальне вікно -->
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <button type="button" class="btn-close" data-modal-close></button>
-            <button type="button" class="btn send">Відправити</button>
+            <p class="form-title">Замовити бізнес-консультацію</p>
+
+            <form class="form" autocomplete="off">
+              <div class="form-left-part">
+                <div class="form-group">
+                  <label class="form-label">Ваше Ім&#8216;я</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input"
+                    placeholder=" "
+                  />
+
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Номер телефону</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    class="form-input"
+                    placeholder="+380 00 000 00 00"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Ваша електронна пошта</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder=" "
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Назва компанії</label>
+                  <input
+                    type="text"
+                    name="company"
+                    class="form-input"
+                    placeholder="Вкажіть назву компанії за бажанням"
+                  />
+                  <!-- <svg class="form-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                </svg> -->
+                </div>
+              </div>
+
+              <div class="form-right-part form-group">
+                <label class="form-label"
+                  >Напишіть коротко суть Вашого звернення</label
+                >
+                <textarea
+                  class="textarea"
+                  name="comment"
+                  rows="20"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+            </form>
+
+            <form class="form-checkbox" autocomplete="off">
+              <label class="form-group-checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  value="Погожуюсь з розсилкою та приймаю умови договору"
+                />
+                <span class="agreement-checkbox"
+                  >Даю згоду на обробку персональних даних згідно
+                  <a href="#" class="agreement-checkbox-link">Умов</a>
+                </span>
+                <svg class="form-icon-checkbox" width="16" height="15">
+                  <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </label>
+
+              <button type="submit" class="btn send">Замовити</button>
+            </form>
+
+            <button type="button" class="btn-close" data-modal-close>
+              <!-- <svg class="icon close" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+                </svg> -->
+            </button>
           </div>
         </div>
         <!-- Модальне вікно end -->
@@ -185,84 +278,125 @@
         <div class="container">
           <h2 class="section-title">Про нас</h2>
           <p class="section-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-            temporibus tempore explicabo iure reprehenderit assumenda esse
-            consequuntur optio pariatur autem modi, fuga perferendis dolorum
-            debitis hic et molestiae consectetur eveniet perspiciatis
-            exercitationem repudiandae eaque consequatur dignissimos? Voluptatem
-            placeat ullam corrupti atque velit, quae reiciendis perspiciatis,
-            qui perferendis, delectus sit distinctio a. Eum ipsum numquam iure
-            provident voluptatum obcaecati expedita reprehenderit qui ea
-            voluptates consequatur, illo voluptas excepturi adipisci saepe?
-            Quisquam dolores minima, nobis esse aperiam tempore eius atque nisi
-            blanditiis impedit eligendi expedita ipsum facilis omnis odio
-            ratione enim qui iste ab ex excepturi. Qui voluptatibus facilis
-            officiis sunt consectetur est ab officia corporis. Veniam tempore
-            sit nemo ab eum!
+            Наша компанія була створена з експертів об&#39;єднаних спільною
+            ідеєю –
+            <span class="accent"
+              >допомогти бізнесу розвиватися, рухатися до мети і досягати
+              стратегічних цілей</span
+            >. Ця ідея зібрала разом в успішну команду фінансового аналітика,
+            проджект-менеджера, керівників проектів, бізнес-аналітика, аналітика
+            бізнес-процесів та бізнес-психолога.
           </p>
 
-         
           <p class="section-text">
-            Possimus nesciunt temporibus, quos doloremque voluptas pariatur
-            autem numquam in atque commodi molestiae fugit voluptatem ea. Animi
-            voluptates quis fugiat vitae fugit, praesentium nihil asperiores
-            odio itaque perferendis? Doloremque illo repudiandae facilis dolorem
-            quis nobis totam esse cupiditate modi, nemo aliquid molestias
-            pariatur dolor libero ex numquam consectetur sint sequi sed repellat
-            quos quod nihil quas nesciunt. Vero perferendis rem blanditiis culpa
-            atque, quisquam dolorem est esse error consectetur! Delectus ad
-            accusamus officia veritatis eveniet optio repellendus culpa nulla
-            autem cumque nihil maiores explicabo aperiam sed, deleniti magni
-            harum obcaecati corporis rem perferendis provident beatae similique
-            aspernatur minima? Explicabo exercitationem minus impedit quo, alias
-            architecto cumque voluptatibus optio excepturi blanditiis tempore
-            consequuntur distinctio dolore ipsam, aliquam enim sit. Aut quasi
-            animi maxime, blanditiis mollitia quisquam pariatur aliquam debitis!
-            Corrupti dolor quas non animi sit officiis quia sunt necessitatibus
-            veniam et. Eos repudiandae maxime, eum cupiditate dolorem natus
-            repellendus odio soluta illo non expedita ipsa porro sapiente a
-            earum velit itaque? Impedit doloremque corrupti excepturi sapiente
-            repellat iure quos exercitationem, at quo eveniet quod minus.
-            Molestias facere accusamus blanditiis obcaecati sequi. Autem cum
-            magnam nihil doloremque quaerat aliquam architecto repudiandae dicta
-            animi, omnis repellendus veniam iusto laboriosam debitis nulla ea,
-            cumque impedit.
+            Ми прагнемо допомогти підприємцям будувати стійкий до негараздів
+            бізнес, сприяти розвитку малого бізнесу, допомогти власникам бізнесу
+            віднайти приховані резерви та усувати слабкі місця.
+          </p>
+
+          <p class="section-text">
+            <span class="accent">Наша місія</span>
+            – допомогти розкрити потенціал вашого бізнесу, віднайти приховані
+            резерви для підвищення ефективності. Нас надихає і мотивує ваш
+            успіх, а тому ми пристрасні до підтримки бізнесу в його успішному
+            розвитку. Ми дуже задоволені, коли наші партнери можуть досягти
+            бажаного економічного ефекту та отримати поштовх до розвитку завдяки
+            нашій взаємодії. Це нас надихає та мотивує рухатись далі. Нас
+            захоплюють спільні бізнес-проєкти та реалізація ідей щодо розвитку
+            компаній різних галузей економіки у відповідності до мінливості
+            зовнішнього середовища.
+          </p>
+          <p class="accent-slogan">Ми рухаємося вперед і рухаємо вперед</p>
+          <p class="section-text">
+            Свобода – це той стан, до якого ми прагнемо, та цінність, яку ми
+            втілюємо в нашій роботі і передаємо нашим клієнтам. Це слово несе не
+            лише політичний, особистісний чи економічний сенс, для нас воно
+            більше і ширше, ніж всі звикли думати і сприймати.
+          </p>
+          <p class="section-text"></p>
+
+          <p class="section-text">
+            Це свобода руху вперед, свобода мислення, свобода розвитку, свобода
+            темпу, свобода цілей, свобода бачення стратегії, свобода від впливу,
+            свобода від страху, <span class="accent">свобода для бізнесу</span>.
+          </p>
+
+          <p class="section-text">
+            Досягнення цього стану дає суттєве прискорення в розвитку. Ми не
+            розглядаємо його вузько, стосовно кожної окремої особи, ми
+            розглядаємо його комплексно для всієї вашої компанії як окремого
+            живого організму. Ми змінюємося разом з вашими потребами, тому є
+            досить гнучкими у співпраці.
+          </p>
+          <p class="section-text">
+            <span class="accent">Наша візія</span> в прагненні відбудувати
+            ефективний, щасливий і здоровий бізнес. Саме тому наша діяльність
+            спрямована на підтримку та розвиток малого бізнесу, популяризацію
+            управлінських та фінансових знань серед власників бізнесу та
+            управлінців, розвитку управлінських функцій та навичок, підтримку
+            ментального здоров&#39;я бізнес-оточення, та усвідомлення
+            бізнес-психології, що в реаліях нашого життя стає однією з
+            необхідних умов ведення ефективного бізнесу, та розбудову економіки
+            вцілому.
           </p>
         </div>
+
         <div class="container">
-          <h3 class="section-subtitle">Місія</h3>
-          <p class="section-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-            temporibus tempore explicabo iure reprehenderit assumenda esse
-            consequuntur optio pariatur autem modi, fuga perferendis dolorum
-            debitis hic et molestiae consectetur eveniet perspiciatis
-            exercitationem repudiandae eaque consequatur dignissimos? Voluptatem
-            placeat ullam corrupti atque velit, quae reiciendis perspiciatis,
-            qui perferendis, delectus sit distinctio a. Eum ipsum numquam iure
-            provident voluptatum obcaecati expedita reprehenderit qui ea
-            voluptates consequatur, illo voluptas excepturi adipisci saepe?
-            Quisquam dolores minima, nobis esse aperiam tempore eius atque nisi
-            blanditiis impedit eligendi expedita ipsum facilis omnis odio
-            ratione enim qui iste ab ex excepturi. Qui voluptatibus facilis
-            officiis sunt consectetur est ab officia corporis.
+          <p class="accent-slogan">
+            Саме тому наші цінності - професіоналізм, інновації, ефективність,
+            етика
           </p>
-        </div>
-        <div class="container">
-          <h3 class="section-subtitle">Візія</h3>
           <p class="section-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-            temporibus tempore explicabo iure reprehenderit assumenda esse
-            consequuntur optio pariatur autem modi, fuga perferendis dolorum
-            debitis hic et molestiae consectetur eveniet perspiciatis
-            exercitationem repudiandae eaque consequatur dignissimos? Voluptatem
-            placeat ullam corrupti atque velit, quae reiciendis perspiciatis,
-            qui perferendis, delectus sit distinctio a. Eum ipsum numquam iure
-            provident voluptatum obcaecati expedita reprehenderit qui ea
-            voluptates consequatur, illo voluptas excepturi adipisci saepe?
-            Quisquam dolores minima, nobis esse aperiam tempore eius atque nisi
-            blanditiis impedit eligendi expedita ipsum facilis omnis odio
-            ratione enim qui iste ab ex excepturi. Qui voluptatibus facilis
-            officiis sunt consectetur est ab officia corporis.
+            Яка ж наша <span class="accent">історія</span>? Чи було все легко,
+            швидко і красиво? Чи почалося все з успіху? Звісно, ні. Спочатку був
+            досвід, різнобічний та цікавий, підкріплений спільними та
+            індивідуальними досягнення вершинок та помилками. Але досвід дуже
+            цінний для нас усіх, бо саме цей професійний шлях створив перепони,
+            долаючи які ми стали досвідченішими, наш погляд на речі став ширший,
+            а наш внутрішній світ став вільніший. І з&#39;явилось бажання
+            ділитися і допомагати.
+          </p>
+
+          <p class="section-text">
+            За останній рік ми допомогли українським жінкам успішно запусти
+            кілька бізнес-проектів в Чехії (Прага), серед яких освітня галузь та
+            торгівля товарами, налагодили та автоматизували бізнес-процеси в
+            кількох компаніях, в тому числі в енергетичній сфері в Україні,
+            будували фінансові моделі експорно-імпортних операцій, провели з
+            десяток тренінгів з питань фінансової грамотності, аналізу та роботи
+            з бізнес-проблемами, написали бізнес-плани для стартапів,
+            підготували компанію клієнта до продажу та знайшли покупця,
+            проводили переговори та пошук інвесторів для українського стартапу.
+          </p>
+
+          <p class="section-text">
+            В минулому році ми запустили
+            <span class="accent"
+              >ініціативу &#8221;Бізнес для жінок і про жінок&#8220; </span
+            >щоб підтримати жіноцтво в їхньому прагненні до незалежності та
+            самостійності. І це не про ведення бізнесу по-чоловічому чи
+            по-жіночому. Це про рух вперед, не дивлячись на обставини, це про
+            майбутнє.
+          </p>
+
+          <p class="section-text">
+            В рамкам цього проекту ми проводимо цікаві та корисні
+            бізнес-зустрічі в жіночому бізнес-ком&#39;юніті, не залежно від
+            територіальної приналежності, об&#39;єднуємо і підтримуємо один
+            одного. І в котре ми доводимо, що конкуренти можуть підсилювати один
+            одного і ефективно працювати разом.
+          </p>
+          <p class="section-text">
+            В цьому році готується до запуску наступний<span class="accent">
+              проект-ініціатива &#8221;Бізнес-підримка для
+              військових&#8220;</span
+            >. Основна мета цього проекту допомогти військовим ветеранам
+            створити новий бізнес, відновити існуючий, проводити консультування,
+            навчання тощо. В рамках цього проекту зараз активно ведеться робота
+            з пошуку партнерів, які готові долучитися до процесу надання
+            освітніх послуг та опанування нових професів ветеранами. І цей
+            проект також про рух вперед і про майбутнє, не дивлячись на
+            обставини.
           </p>
         </div>
       </section>
@@ -271,7 +405,57 @@
       <section class="realisation">
         <div class="container">
           <h2 class="section-title">Як відбувається реалізація проектів</h2>
-          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsam laborum quo veritatis beatae minus labore eum optio rerum ad pariatur expedita, fugiat exercitationem ea aliquid velit ducimus similique quae!</p>
+          <p class="section-text">
+            Зазвичай напрямок роботи залежить від запиту, але все починається з
+            аналізу того стану, як є. Аналіз поточного стану допомогає виявити
+            ключові проблеми чи зупинки руху, місця втрати чи неефекивного
+            використання ресурсів, а також віднайти слабкі місця.
+          </p>
+          <p class="section-text">
+            Тому спочатку здійснюємо декомпозицію бізнес-проблеми, проводимо
+            роботу з причинами, далі візуалізуємо послідовності подій і дій, що
+            створюються в рамках певного процесу, щоб зрозуміти його структуру
+            та його ефективність, виявляємо місця втрат, дубляжу та ризиків. А
+            вже далі починається робота з усунення негативних факторів,
+            нефективних зв&#39;язків та розривів послідовностей, та оптимізації
+            ключових напрямків вашої діяльності.
+          </p>
+          <p class="section-text">
+            Наші дії спрямові на збереження ресурсів та отримання більшого
+            результату, видалення повторювальних або дублюючих кроків, зменшення
+            витрат і оптимізацію процесів шляхом усунення марнотратних операцій.
+            Протягом років свого професійного досвіду ми зрозуміли, що
+          </p>
+          <p class="accent-slogan">
+            Ефективність діяльності - в дбайливому ставленні до ресурсів
+          </p>
+          <p class="section-text">
+            В свій роботі та практиці ми користуємося певними професійними
+            інструментами та підходами для виявлення та аналізу бізнес-проблем,
+            пошуку рішень, включаючи аналіз бізнес-процесів, їхній опис та
+            оптимізацію, супроводження проектів.
+          </p>
+          <p class="section-text">
+            Ось деякі з них: мапування бізнес-процесів, SWOT-аналіз, діаграми
+            Ганта, процеси SIX SIGMA, методологія LEAN, дерево причин і
+            наслідків (Ishikawa або Fishbone Diagram), методологія Дизайну
+            Мислення (Design Thinking), аналіз структури бізнес-процесів (BPA),
+            парето-аналіз, постановка SMART-цілей та інші.
+          </p>
+          <p class="section-text">
+            Ці та інші інструменти та підходи ми використовуємо окремо або в
+            комбінації з іншими для розв'язання конкретних бізнес-проблем і
+            підвищення ефективності процесів. Враховуючи специфічність галузі,
+            особливість поставлених завдань чи отриманих запитів, до роботи
+            також можуть долучатися запрошені експерти.
+          </p>
+
+          <p class="section-text">
+            Також ми залучаємо команди до навчання та тренінгів, проводимо
+            професійні бізнес-зустрічі, спрямовані на розширення поглядів, знань
+            та вмінь аудиторії, активно ділимося своїми знаннями, досвідом та
+            практичними навичками.
+          </p>
         </div>
       </section>
 
@@ -279,18 +463,12 @@
       <section class="questions">
         <div class="container">
           <h2 class="section-title">Які питання ми вирішуємо</h2>
-           <p class="section-text">
-            Підприємці завжди стикаються з питаннями управління своїм бізнесом. Іноді їхні історії мені нагадують діряву шлюпку, коли підприємець закриває дірку пальцем, а вода починає текти з іншої дірки. Але ж пальців на руках десять і підприємець знову закриває нову дірку іншим пальцем, та з’являється ще одна нова. І так до моменту, поки всі його пальці закривають проріхи в шлюпці. Знайомо?
-            Та дірки продовжусь з&#39;являтися. І тоді в певний момент часу підприємець стає перед вибором: яку дірку тимчасово відпустити і дати воді наповнювати шлюпку, а яку тимчасово закрити. 
-            Таке стихійне управління рано чи пізно призводить до того, що шлюпка йде на дно з усіма підприємницькими мріями, недосягнутими цілями, купою витрачених ресурсів та часу, набутими страхами і розчаруванням, і щастя, якщо не з боргами. 
-            Давайте повернемося до вихідної точки.
+        </div>
+      </section>
 
-          <p class="section-text"
-            >Так от, коли керівники задаються питанням як налагодити систему так, щоб працювало як єдиний організм без збоїв, я завжди відповідаю: &#8221;Бізнес-процесити&#8220;. Зазвичай відповідь одна: &#8221;На це нема часу, бізнес не чекає	&#8220;. Ця відповідь не завжди про те, що часу нема, здебільшого вона про незнання та нерозуміння суті та важливості процесного підходу. Візьмем, наприклад, операційну систему. Це та магія, яка ховається за металом ноутбуків та мобільних телефонів. Зверніть увагу, вона працює без вашого втручання. А чому? А тому що хтось налагодив там процеси. &#8221;От би і в бізнесі так само було!&#8220;, - захопливо говорить підприємець. Гарна новина полягає в тому, що в бізнесі так само і є.</p>
-          </p>
-          <p class="section-text">То що ж таке бізнес-процеси і де вони ховаються у вашому бізнесі? А вони набагато ближче, ніж може здатися, адже послідовність дій та операцій, які виконуються в організації з метою досягнення конкретної мети або результату і є бізнес-процесами. 
-            Іншими словами, це будь-яка діяльність, що включає у себе різноманітні етапи, ресурси та учасників.</p>
-            
+      <section class="clients">
+        <div class="container">
+          <h2 class="section-title">Хто є нашим клієнтом</h2>
         </div>
       </section>
 
@@ -713,11 +891,13 @@
             <ul class="list">
               <li class="address-item">
                 <a class="link" href="mailto:opticorer@gmail.com"
-                  >opticorer@gmail.com</a
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
                 >
               </li>
               <li class="address-item">
-                <a class="link" href="tel:+380964355652">+380964355652</a>
+                <a class="link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
               </li>
             </ul>
           </address>
