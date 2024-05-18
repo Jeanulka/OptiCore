@@ -22,6 +22,7 @@
 
   <body>
     <!-- Header start -->
+    <!-- Header start -->
     <header class="header">
       <div class="container">
         <nav class="main-navigation">
@@ -39,22 +40,21 @@
             <li class="item">
               <a href="./index.html" class="link nav-menu-link">Про нас</a>
             </li>
-
             <li class="item">
               <a href="./services.html" class="link nav-menu-link">Послуги</a>
               <ul class="nav-submenu-list">
-                <li class="nav-submenu-list-item">
+                <!-- <li class="nav-submenu-list-item">
                   <a
                     href="./services.html#business-processes"
                     class="link nav-submenu-link"
                     >Опис бізнес-процесів</a
                   >
-                </li>
+                </li> -->
                 <li class="nav-submenu-list-item">
                   <a
                     href="./services.html#opti-bp"
                     class="link nav-submenu-link"
-                    >Оптимізація бізнес-процесів</a
+                    >Опис та оптимізація бізнес-процесів</a
                   >
                 </li>
 
@@ -79,9 +79,15 @@
                     >Супроводження проектів</a
                   >
                 </li>
+                <li class="nav-submenu-list-item">
+                  <a
+                    href="./services.html#trainings"
+                    class="link nav-submenu-link"
+                    >Тренінги</a
+                  >
+                </li>
               </ul>
             </li>
-
             <li class="item">
               <a href="./education.html" class="link nav-menu-link">Навчання</a>
               <ul class="nav-submenu-list">
@@ -89,23 +95,17 @@
                   <a
                     href="./education.html#businessboost-academy"
                     class="link nav-submenu-link"
-                    >BusinessBoost Academy</a
+                    >BusinessBoost Academy<sup class="sup">TM</sup></a
                   >
                 </li>
-                <li class="nav-submenu-list-item">
+                <!-- <li class="nav-submenu-list-item">
                   <a
                     href="./education.html#education"
                     class="link nav-submenu-link"
                     >Навчання команд</a
                   >
-                </li>
-                <li class="nav-submenu-list-item">
-                  <a
-                    href="./education.html#trainings"
-                    class="link nav-submenu-link"
-                    >Тренінги</a
-                  >
-                </li>
+                </li> -->
+
                 <li class="nav-submenu-list-item">
                   <a
                     href="./knowledgebase.html#Knowledgebase"
@@ -116,16 +116,14 @@
               </ul>
             </li>
 
-            <li class="item">
-              <a
-                href="./initiatives.html"
-                class="link nav-menu-link current-page"
+            <!-- <li class="item">
+              <a href="./initiatives.html" class="link nav-menu-link  current-page"
                 >Ініціативи</a
               >
               <ul class="nav-submenu-list">
                 <li class="nav-submenu-list-item">
                   <a
-                    href="./initiatives.html#Mental-health"
+                    href="./initiatives.html#Pshycho"
                     class="link nav-submenu-link"
                     >Бізнес-психологія</a
                   >
@@ -145,29 +143,123 @@
                   >
                 </li>
               </ul>
-            </li>
+            </li> -->
 
             <li class="item">
               <a href="#" class="link nav-menu-link">Блог</a>
             </li>
 
             <li class="item">
-              <a href="#" class="link nav-menu-link">Контакти</a>
+              <a href="#contacts-info" class="link nav-menu-link">Контакти</a>
             </li>
           </ul>
+          <div class="modal-btn">
+            <button type="button" class="btn" data-modal-open>
+              Замовити консультацію
+            </button>
+          </div>
         </nav>
-        <div class="modal-btn">
-          <button type="button" class="btn" data-modal-open>
-            Консультація
-          </button>
-        </div>
 
         <!-- Модальне вікно -->
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <button type="button" class="btn-close" data-modal-close></button>
-            <button type="button" class="btn send">Відправити</button>
+            <p class="form-title">Замовити бізнес-консультацію</p>
+
+            <form class="form" autocomplete="off">
+              <div class="form-left-part">
+                <div class="form-group">
+                  <label class="form-label">Ваше Ім&#8216;я</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input"
+                    placeholder=" "
+                  />
+
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Номер телефону</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    class="form-input"
+                    placeholder=" "
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Ваша електронна пошта</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder=" "
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Назва компанії</label>
+                  <input
+                    type="text"
+                    name="company"
+                    class="form-input"
+                    placeholder="Вкажіть назву компанії за бажанням"
+                  />
+                </div>
+              </div>
+
+              <div class="form-right-part form-group">
+                <label class="form-label"
+                  >Напишіть коротко суть Вашого звернення</label
+                >
+                <textarea
+                  class="textarea"
+                  name="comment"
+                  rows="20"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+            </form>
+
+            <form class="form-checkbox" autocomplete="off">
+              <label class="form-group-checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  value="Погожуюсь з розсилкою та приймаю умови договору"
+                />
+                <span class="agreement-checkbox"
+                  >Даю згоду на обробку персональних даних згідно
+                  <a
+                    href="./privacy-notice.html"
+                    class="agreement-checkbox-link"
+                    >Політики конфіденційності</a
+                  >
+                </span>
+                <svg class="form-icon-checkbox" width="16" height="15">
+                  <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </label>
+
+              <button type="submit" class="btn send">Відправити</button>
+            </form>
+
+            <button type="button" class="btn-close" data-modal-close>
+              <!-- <svg class="icon close" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+                </svg> -->
+            </button>
           </div>
         </div>
         <!-- Модальне вікно end -->
@@ -176,75 +268,106 @@
 
     <main>
       <!-- Mental health section -->
-      <section class="Mental-health">
+      <section class="Pshycho">
         <div class="container">
-          <h2 class="section-title" id="Mental-health">
-            Робота в проєкті Mental health
+          <h2 class="section-title" id="Pshycho">
+            Робота в проєкті Бізнес-психологія
           </h2>
-          <h3 class="section-subtitle">Що таке Mental health?</h3>
+          <h3 class="section-subtitle">Що таке бізнес-психологія?</h3>
           <p class="section-text">
-            Explicabo exercitationem minus impedit quo, alias architecto cumque
-            voluptatibus optio excepturi blanditiis tempore consequuntur
-            distinctio dolore ipsam, aliquam enim sit. Aut quasi animi maxime,
-            blanditiis mollitia quisquam pariatur aliquam debitis! Corrupti
-            dolor quas non animi sit officiis quia sunt necessitatibus veniam
-            et. Eos repudiandae maxime, eum cupiditate dolorem natus repellendus
-            odio soluta illo non expedita ipsa porro sapiente a earum velit
-            itaque? Impedit doloremque corrupti excepturi sapiente repellat iure
-            quos exercitationem, at quo eveniet quod minus. Molestias facere
-            accusamus blanditiis obcaecati sequi. Autem cum magnam nihil
-            doloremque quaerat aliquam architecto repudiandae dicta animi, omnis
-            repellendus veniam iusto laboriosam debitis nulla ea, cumque
-            impedit.
+            Бізнес-психологія досліджує поведінку людей у відношенні до роботи
+            та організаційного середовища. Основна мета бізнес-психології
+            полягає в тому, щоб зрозуміти,
+            <span class="accent">
+              як впливають фактори робочого середовища на ефективність</span
+            >, задоволеність роботою та мотивацію працівників.
           </p>
           <p class="section-text">
-            Libero voluptatibus delectus natus, et optio laborum beatae nihil
-            facere magnam at consequuntur eum velit sapiente vero iste ipsam
-            culpa debitis, illum quas accusantium! Libero at voluptatem porro
-            rerum aliquam error veritatis, aspernatur sed ipsa similique ipsam
-            iure, incidunt a neque nisi aliquid ab, beatae asperiores vel
-            corrupti totam earum sint. Nesciunt hic suscipit, pariatur totam at
-            nobis nemo eaque voluptas voluptate et esse maxime doloribus
-            necessitatibus inventore facere dolore rem similique harum?
-            Recusandae quasi minima fuga fugiat delectus magni consequatur
-            nostrum ab, quaerat laboriosam quidem. Reprehenderit eum consectetur
-            in cumque maiores nihil hic rerum ratione. Consectetur, blanditiis
-            esse autem id tempora qui quae, vel maiores pariatur exercitationem
-            quam dicta magni consequatur enim recusandae error labore omnis ea
-            optio at magnam ut? A illum temporibus, sit quidem, tempore facilis
-            vitae itaque hic, natus commodi suscipit! Autem, itaque. Repellat id
-            ullam hic officia harum earum quisquam, sequi quasi necessitatibus!
-            Asperiores reiciendis dolores inventore totam porro dicta soluta
-            aliquid quia esse commodi? Id magni eveniet corrupti nesciunt dicta
-            obcaecati officia voluptatum. Aspernatur, fuga non natus delectus
-            sit corrupti perferendis quod adipisci hic, quo eius architecto
-            voluptate porro sed quasi obcaecati fugit.
+            Бізнес-психологи досліджують управління персоналом, комунікацію в
+            організаціях, лідерство, розвиток кар&#39;єри, конфліктологію та
+            багато іншого. Вони застосовують психологічні принципи та методи для
+            розв&#39;язання проблем у сфері бізнесу та
+            <span class="accent"
+              >підвищення ефективності організаційних процесів</span
+            >.
           </p>
           <p class="section-text">
-            Possimus nesciunt temporibus, quos doloremque voluptas pariatur
-            autem numquam in atque commodi molestiae fugit voluptatem ea. Animi
-            voluptates quis fugiat vitae fugit, praesentium nihil asperiores
-            odio itaque perferendis? Doloremque illo repudiandae facilis dolorem
-            quis nobis totam esse cupiditate modi, nemo aliquid molestias
-            pariatur dolor libero ex numquam consectetur sint sequi sed repellat
-            quos quod nihil quas nesciunt. Vero perferendis rem blanditiis culpa
-            atque, quisquam dolorem est esse error consectetur! Delectus ad
-            accusamus officia veritatis eveniet optio repellendus culpa nulla
-            autem cumque nihil maiores explicabo aperiam sed, deleniti magni
-            harum obcaecati corporis rem perferendis provident beatae similique
-            aspernatur minima? Explicabo exercitationem minus impedit quo, alias
-            architecto cumque voluptatibus optio excepturi blanditiis tempore
-            consequuntur distinctio dolore ipsam, aliquam enim sit. Aut quasi
-            animi maxime, blanditiis mollitia quisquam pariatur aliquam debitis!
-            Corrupti dolor quas non animi sit officiis quia sunt necessitatibus
-            veniam et. Eos repudiandae maxime, eum cupiditate dolorem natus
-            repellendus odio soluta illo non expedita ipsa porro sapiente a
-            earum velit itaque? Impedit doloremque corrupti excepturi sapiente
-            repellat iure quos exercitationem, at quo eveniet quod minus.
-            Molestias facere accusamus blanditiis obcaecati sequi. Autem cum
-            magnam nihil doloremque quaerat aliquam architecto repudiandae dicta
-            animi, omnis repellendus veniam iusto laboriosam debitis nulla ea,
-            cumque impedit.
+            Бізнес-психологія підвищує ефективність діяльності в різних галузях,
+            включаючи управління, HR, маркетинг, консультування та інші сфери
+            бізнесу, де важлива роль відведена розумінню та
+            <span class="accent"
+              >оптимізації взаємодії між людьми в організаційному
+              середовищі</span
+            >.
+          </p>
+          <p class="section-text">
+            Аналіз бізнес-проблем, опис та оптимізація бізнес-процесів, а
+            <span class="accent">до чого тут бізнес-психологія?</span>
+          </p>
+          <p class="section-text">
+            Насправді, бізнес-психологія тісно пов&#39;язана з бізнес-процесами
+            саме через
+            <span class="accent"
+              >розуміння впливу людського фактору на організаційні процеси</span
+            >. Це один з пазлів кубіка Рубіка бізнесу. Для більш наочного
+            розуміння, наведемо кілька взаємозв&#39;язків між бізнес-проблемами,
+            бізнес-процесами та бізнес-психологією:
+          </p>
+          <p class="section-text"></p>
+          <ul class="section-list">
+            <li class="section-list-item">
+              <p class="section-text">
+                Бізнес-психологія допомагає управлінцям розуміти, як краще
+                мотивувати, управляти та розвивати персонал. Вона досліджує, які
+                фактори впливають на продуктивність працівників, їх
+                задоволеність роботою, комунікацію в команді тощо.
+              </p>
+            </li>
+            <li class="section-list-item">
+              <p class="section-text">
+                Бізнес-психологія допомагає у розвитку керівницьких якостей та
+                лідерських навичок. Вона досліджує стилі керівництва,
+                ефективність командного роботи, способи мотивації та навички
+                вирішення конфліктів.
+              </p>
+            </li>
+            <li class="section-list-item">
+              <p class="section-text">
+                Бізнес-психологія вивчає формування організаційної культури та
+                вплив цієї культури на робочі процеси. Вона допомагає
+                підприємствам створювати сприятливі умови для працівників, де
+                вони можуть ефективно працювати та розвиватися.
+              </p>
+            </li>
+            <li class="section-list-item">
+              <p class="section-text">
+                Бізнес-психологія досліджує ефективність комунікації в
+                організації та стратегії вирішення конфліктів. Вона допомагає
+                покращувати комунікаційні навички працівників, розв&#39;язувати
+                конфлікти та підтримувати позитивні взаємини між колегами.
+              </p>
+            </li>
+          </ul>
+
+          <p class="section-text">
+            Отже, бізнес-психологія допомагає розуміти, як люди працюють та
+            взаємодіють у контексті бізнесу, що
+            <span class="accent"
+              >дозволяє оптимізувати бізнес-процеси та досягати кращих
+              результатів</span
+            >.
+          </p>
+          <p class="section-text">
+            В рамках даного проекту може проводитися як колективна робота у
+            вигляді тренінгів команд, так і індивідуальна окрема робота за
+            бажанням клієнта. В процесі аналізу, опису та оптимізації
+            бізнес-процесів робота бізнес-психолога також часто має місце бути.
+            Як показує наша практика,
+            <span class="accent"
+              >робота в командах відбувається набагато ефективніше, розуміння
+              самого робочого процесу стає глибшим, а дії більш
+              усвідомленими.</span
+            >
           </p>
         </div>
       </section>
@@ -256,60 +379,100 @@
             Бізнес для жінок і про жінок
           </h2>
           <p class="section-text">
-            Libero voluptatibus delectus natus, et optio laborum beatae nihil
-            facere magnam at consequuntur eum velit sapiente vero iste ipsam
-            culpa debitis, illum quas accusantium! Libero at voluptatem porro
-            rerum aliquam error veritatis, aspernatur sed ipsa similique ipsam
-            iure, incidunt a neque nisi aliquid ab, beatae asperiores vel
-            corrupti totam earum sint. Nesciunt hic suscipit, pariatur totam at
-            nobis nemo eaque voluptas voluptate et esse maxime doloribus
-            necessitatibus inventore facere dolore rem similique harum?
-            Recusandae quasi minima fuga fugiat delectus magni consequatur
-            nostrum ab, quaerat laboriosam quidem. Reprehenderit eum consectetur
-            in cumque maiores nihil hic rerum ratione. Consectetur, blanditiis
-            esse autem id tempora qui quae, vel maiores pariatur exercitationem
-            quam dicta magni consequatur enim recusandae error labore omnis ea
-            optio at magnam ut? A illum temporibus, sit quidem, tempore facilis
-            vitae itaque hic, natus commodi suscipit! Autem, itaque. Repellat id
-            ullam hic officia harum earum quisquam, sequi quasi necessitatibus!
-            Asperiores reiciendis dolores inventore totam porro dicta soluta
-            aliquid quia esse commodi? Id magni eveniet corrupti nesciunt dicta
-            obcaecati officia voluptatum. Aspernatur, fuga non natus delectus
-            sit corrupti perferendis quod adipisci hic, quo eius architecto
-            voluptate porro sed quasi obcaecati fugit.
+            В минулому році ми запустили
+            <span class="accent"
+              >ініціативу &#8221;Бізнес для жінок і про жінок&#8220; </span
+            >щоб підтримати жіноцтво в їхньому прагненні до незалежності та
+            самостійності. І це не про ведення бізнесу по-чоловічому чи
+            по-жіночому. Це про рух вперед, не дивлячись на обставини, це про
+            майбутнє.
           </p>
           <p class="section-text">
-            Possimus nesciunt temporibus, quos doloremque voluptas pariatur
-            autem numquam in atque commodi molestiae fugit voluptatem ea. Animi
-            voluptates quis fugiat vitae fugit, praesentium nihil asperiores
-            odio itaque perferendis? Doloremque illo repudiandae facilis dolorem
-            quis nobis totam esse cupiditate modi, nemo aliquid molestias
-            pariatur dolor libero ex numquam consectetur sint sequi sed repellat
-            quos quod nihil quas nesciunt. Vero perferendis rem blanditiis culpa
-            atque, quisquam dolorem est esse error consectetur! Delectus ad
-            accusamus officia veritatis eveniet optio repellendus culpa nulla
-            autem cumque nihil maiores explicabo aperiam sed, deleniti magni
-            harum obcaecati corporis rem perferendis provident beatae similique
-            aspernatur minima? Explicabo exercitationem minus impedit quo, alias
-            architecto cumque voluptatibus optio excepturi blanditiis tempore
-            consequuntur distinctio dolore ipsam, aliquam enim sit. Aut quasi
-            animi maxime, blanditiis mollitia quisquam pariatur aliquam debitis!
-            Corrupti dolor quas non animi sit officiis quia sunt necessitatibus
-            veniam et. Eos repudiandae maxime, eum cupiditate dolorem natus
-            repellendus odio soluta illo non expedita ipsa porro sapiente a
-            earum velit itaque? Impedit doloremque corrupti excepturi sapiente
-            repellat iure quos exercitationem, at quo eveniet quod minus.
-            Molestias facere accusamus blanditiis obcaecati sequi. Autem cum
-            magnam nihil doloremque quaerat aliquam architecto repudiandae dicta
-            animi, omnis repellendus veniam iusto laboriosam debitis nulla ea,
-            cumque impedit.
+            У світі, що швидко змінюється, роль жінок у бізнесі стає все більш
+            значущою та впливовою. Жінки не лише стають ключовими гравцями в
+            економіці, але й приносять унікальні переваги та підходи до своїх
+            підприємницьких зусиль. Перш за все, бізнес для жінок - це не просто
+            можливість, але й виклик, який стимулює їх розвиток та
+            самореалізацію. Жінки мають унікальний погляд на розвиток бізнесу,
+            вони здатні бачити можливості та ризики з іншого кута, що дозволяє
+            їм створювати інноваційні та стійкі підприємства.
+          </p>
+          <p class="section-text">
+            Далі, важливо відзначити, що підприємництво дозволяє жінкам виходити
+            за межі традиційних ролей та досягати успіху у будь-якій галузі, що
+            сприяє збільшенню їх представниць у вищих посадах та в управлінні.
+          </p>
+          <p class="section-text"></p>
+
+          <p class="section-text">
+            Нарешті, бізнес для жінок є джерелом натхнення та підтримки для
+            інших жінок. Успішні жінки-підприємниці стають прикладом та
+            менторами для молодих підприємниць, допомагаючи їм розвивати свої
+            здібності та досягати своїх цілей. Усе враховуючи, бізнес для жінок
+            - це не лише економічна можливість, але й шлях до особистого
+            зростання, розвитку суспільства та підтримки інших жінок. Жінки
+            відіграють ключову роль у суспільстві як катализатори змін та
+            розвитку.
+          </p>
+          <p class="section-text">
+            Створення бізнесу для жінок є не лише засобом самореалізації та
+            економічної незалежності, але й можливістю внести значний внесок у
+            розвиток економіки та соціальний прогрес. Українські жінки
+            демонструють свою силу та вплив у бізнесі, незважаючи на виклики, з
+            якими стикаються. Хочеться відмітити, що війна, яка триває в
+            Україні, створює складні умови для розвитку бізнесу та
+            самореалізації жінок. Воєнний конфлікт призводить до економічних та
+            соціальних викликів, змушуючи багато жінок боротися за виживання
+            своїх сімей та спільноти. Однак жінки також виявляють неймовірну
+            силу та стійкість, створюючи нові можливості та перспективи навіть у
+            складних умовах війни.
+          </p>
+          <p class="section-text">
+            Таким чином, важливість ролі жінки в створенні бізнесу стає особливо
+            актуальною в умовах війни. Жінки в Україні не лише проявляють свою
+            підприємницьку ініціативу, але й стають символом надії та стійкості,
+            сприяючи економічному відновленню та соціальному розвитку у складні
+            часи.
+          </p>
+          <p class="section-text">
+            В рамкам цього проекту ми проводимо цікаві та корисні
+            бізнес-зустрічі в жіночому бізнес-ком&#39;юніті, не залежно від
+            територіальної приналежності, об&#39;єднуємо і підтримуємо один
+            одного. І в котре ми доводимо, що конкуренти можуть підсилювати один
+            одного і ефективно працювати разом.
+          </p>
+          <p class="section-text">
+            Даний проект покликаний
+            <span class="accent"
+              >об&#39;єднати українських бізнес-вумен та сприяти поширенню
+              знань, обміну досвідом серед бізнес-жіноцтва, утворення
+              партнерств, мерчів, об&#39;єднань та професійних бізнес-зустрічей
+              в будь-якому куточку світу.</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="veterans-business" id="veterans-business">
+        <div class="contacts">
+          <p class="section-text">
+            В цьому році готується до запуску наступний<span class="accent">
+              проект-ініціатива &#8221;Бізнес-підримка для
+              військових&#8220;</span
+            >. Основна мета цього проекту допомогти військовим ветеранам
+            створити свій бізнес або відновити існуючий. Тут заплановані
+            консультації, навчання тощо. В рамках цього проекту зараз активно
+            ведеться робота з пошуку партнерів, які готові долучитися до процесу
+            надання освітніх послуг та опанування нових професів ветеранами. І
+            цей проект також про рух вперед і про майбутнє, не дивлячись на
+            обставини.
           </p>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts-info">
       <div class="container">
         <div class="left-part">
           <address class="address">
@@ -317,11 +480,13 @@
             <ul class="list">
               <li class="address-item">
                 <a class="link" href="mailto:opticorer@gmail.com"
-                  >opticorer@gmail.com</a
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
                 >
               </li>
               <li class="address-item">
-                <a class="link" href="tel:+380964355652">+380964355652</a>
+                <a class="link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
               </li>
             </ul>
           </address>
@@ -330,8 +495,9 @@
         <div class="central-part">
           <!-- Footer Logo -->
           <a href="/" class="logo"
-            >OptiCore<span class="footer-logo-part">R</span></a
-          >
+            >OptiCore<span class="footer-logo-part">R</span
+            ><sup><span class="logo-sup">TM</span></sup>
+          </a>
         </div>
         <!-- Footer Social -->
         <div class="right-part">
@@ -339,7 +505,7 @@
             <li class="social-link-item">
               <a
                 class="social-link"
-                href="#"
+                href="https://www.instagram.com/kudrytska.zh?igsh=dzRoanN1dnFldGE1&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 aria-label="Посилання на інстаграм"
@@ -352,7 +518,7 @@
             <li class="social-link-item">
               <a
                 class="social-link"
-                href="#"
+                href="https://www.facebook.com/jeanulka/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 aria-label="Посилання на фейсбук"
@@ -365,10 +531,10 @@
             <li class="social-link-item">
               <a
                 class="social-link"
-                href="#"
+                href="https://www.linkedin.com/in/zhanna-kudrytska-8091075b/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                aria-label="Посиалння на лінкедін"
+                aria-label="Посилання на лінкедін"
               >
                 <svg class="social-link-icon" width="20" height="20">
                   <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
@@ -377,6 +543,28 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="container">
+        <a
+          class="privacy-notice_link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Політика конфіденційності"
+          >Політика конфіденційності</a
+        >
+        <a
+          class="offer-agreement_link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Публічний договір оферта"
+          >Публічний договір оферта</a
+        >
+      </div>
+
+      <div class="container">
+        <p class="all-rights-reserved_text">&copy; All rights reserved</p>
       </div>
     </footer>
 
