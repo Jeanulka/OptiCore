@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -162,10 +162,64 @@
           </ul>
           <div class="header__button">
             <button type="button" class="btn__book" data-modal-open>
-              Замовити консультацію
+              Замовити
             </button>
+            <button type="button" class="mobile-menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="button__icon" width="24" height="24"
+              ><use href="./images/svg/symbol-defs.svg#icon-burger"></use></svg>
+            </button>
+
           </div>
       </nav>
+
+        <!-- Mobile Menu -->
+          <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+            <button type="button" class="mobile-menu__button js-close-menu">
+              <svg class="button__icon" width="24" height="24"
+              ><use href="./images/svg/symbol-defs.svg#icon-Close"
+                ></use></svg>
+            </button>
+            <ul class="mobile-menu list">
+            <li >
+              <a href="./index.html" class="link main-nav__menu-link current-page"
+                >Про нас</a>
+            </li>
+            <li>
+              <a href="./services.html" class="link main-nav__menu-link">Послуги</a>              
+            </li>
+            <li >
+              <a href="./education.html" class="link main-nav__menu-link">Навчання</a>              
+            </li>
+            <!-- <li>
+              <a href="./initiatives.html" class="link main-nav__menu-link"
+                >Ініціативи</a
+              >              
+            </li> -->
+            <li >
+              <a class="link main-nav__menu-link" 
+                href="https://blog.liga.net/user/zkudrytska/profile" 
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                aria-label="Блог Кудрицької Жанни">Блог</a>
+            </li>
+           <li >
+                <a class="link main-nav__menu-link mail" 
+                href="mailto:opticorer@gmail.com"
+                  >opticorer@gmail.com</a
+                >
+              </li>
+              <li >
+                <a class="link main-nav__menu-link" 
+                href="tel:+380964355652"
+                  >+38 (096) 435-56-52</a
+                >
+              </li>
+          </ul>
+
+          </div>
+        </div>
+          
+      </nav>     
         
 
         <!-- Модальне вікно -->
@@ -286,31 +340,27 @@
           <h2 class="section__title">Про нас</h2>
           <p class="section__text">
             <span class="accent-name">OptiCoreR</span> - це консалтингова
-            компанія, яка спеціалізується на наданні комплексних послуг
-            стратегічного та управлінського характеру для підприємств різних
-            галузей та масштабів. Наша команда експертів та професіоналів
-            об&#39;єднує в собі глибокі знання, підприємницьке мислення та
-            багаторічний досвід у різних сферах бізнесу, що дозволяє нам
+            компанія, яка надає  <span class="accent">послуги з бізнес-аналізу, опису та оптимізації бізнес-процесів,</span>
+            інших послуг стратегічного та управлінського характеру для підприємств різних
+            галузей та масштабів. В нашій команді експерти та професіонали з професійними
+            знаннями, підприємницьким мисленням та
+            багаторічним досвідом у різних сферах бізнесу. Це дозволяє нам
             розробляти індивідуальні стратегії та рішення, які відповідають
-            конкретним потребам та цілям кожного нашого клієнта. А ще всіх нас
-            об&#39;єднує спільна ідея –
-            <span class="accent"
-              >допомогти бізнесу розвиватися, рухатися до мети і досягати
-              стратегічних цілей</span
-            >. Ми зібрали разом в успішну команду бізнес-аналітиків,
-            проджект-менеджерів, фінансових аналітиків, керівників проектів,
-            консультантів з різних питань управління та сфер бізнесу.
-          </p>
-        
+            конкретним потребам та цілям кожного нашого клієнта. 
+            Ми поєднуємо інструменти бізнес-аналізу та процесного підходу, 
+            адже наш досвід показує, що порядок та системність в бізнес-процесах
+            допомагає будувати стійкий до негараздів бізнес та сприяє
+            розвитку.
+         
+             
           <p class="section__text frame">
             <span class="accent">Наша місія</span>
             – допомогти нашим клієнтам розкрити потенціал бізнесу, віднайти
-            приховані резерви для підвищення ефективності та результативності
-            діяльності через налагоджнені та оптимізовані бізнес-процеси, а це
-            все, в свою чергу, створить та забезпечить стратегічні конкурентні
-            переваги бізнесу на ринку. Порядок та системність в бізнес-процесах
-            допоможе будувати стійкий до негараздів бізнес та сприятиме
-            розвитку.
+            приховані резерви для росту та розвитку, підвищити ефективність 
+            діяльності та забезпечити стратегічні конкурентні
+            переваги на ринку. При цьому у ваш бізнес приходить порядок, системність 
+            та спокій.
+         
           </p>
           <p class="section__text">
             Нас надихає і мотивує ваш успіх, а тому ми пристрасні до підтримки
@@ -860,7 +910,13 @@
           </div>
            
     </footer>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
