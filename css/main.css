@@ -850,7 +850,7 @@ Services page
 }
 .services__intro {
   max-width: 1920px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #b8cf69;
@@ -862,15 +862,30 @@ Services page
   padding-bottom: 20px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .services__intro {
+    width: 100%;
+    max-width: 1920px;
+    max-height: 200px;
+  }
+}
 .services__intro-title {
   margin-top: 20%;
-  margin-left: 60%;
+  margin-left: 20%;
   /* text-align: center; */
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .services__intro-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20%;
+    margin-left: 20%;
+  }
 }
 
 /* ===========================
