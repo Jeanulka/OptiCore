@@ -52,19 +52,16 @@ body {
         width: $container-width;
     }
 
-
-
     &__:not(:last-child) {
     margin-bottom: 50px;
     }   
-
 }
 
 
 section {
-        @media screen and (max-width: 1199px) {
-                padding-top: 60px;
-                padding-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
             }
 
     @media screen and (min-width: $desktop) {
@@ -102,8 +99,8 @@ section {
 
 .section__text {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.71;
+    font-size: 18px;
+    line-height: 1.61;
     letter-spacing: 0.42px;
 
 &:not(:last-child) {
@@ -128,7 +125,7 @@ section {
 .accent {
     color: $text-color-accent;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
 
 &-name {

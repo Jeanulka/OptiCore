@@ -2,7 +2,8 @@
 Section HERO
 ============================== */
 .hero {
-
+    
+    margin-top: 81px;
     margin-left: auto;
     margin-right: auto;
 
@@ -16,10 +17,21 @@ Section HERO
 
     text-align: center;
 
+@media screen and (max-width: 767px) {
+        width: 100%;
+        max-width: 767px;
+        max-height: 200px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: 100%;
+        max-width: 1199px;
+        max-height: 200px;
+    }
+
     @media screen and (min-width: $desktop) {
         max-width: 1920px;
-        height: 600px;
-        margin-top: 81px;
+        max-height: 600px;   
 
         padding-top: 200px;
     /* padding-bottom: 200px; */
@@ -36,13 +48,15 @@ Section HERO
     letter-spacing: 2.64px;
     text-transform: uppercase;
 
-    @media screen and (min-width: $mobile) and (max-width: 1190px) {
-            width: 70%;
+    @media screen and (max-width: 767px) {
+            font-size: 24px;
+            font-weight: 700;
         }
-
-    @media screen and (min-width: $desktop) {
-        width: 696px;   
-    }
+    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            font-size: 24px;
+            font-weight: 700;
+        }
 
     color: $secondary-color;
     z-index: 2;
@@ -58,12 +72,16 @@ Section HERO
 }
 
 &:hover &__title {
-    transform: translateY(-65%);
+    transform: translateY(-65%);      
 }
 
 &:hover &__overlay-text {
-    transform: translateY(-190%);
+    transform: translateY(-190%);    
     color: $secondary-color;
+    
+    @media screen and (max-width: 767px) {
+    transform: translateY(-120%);
+        }
 
 }
 }

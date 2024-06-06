@@ -45,7 +45,7 @@ img {
 ============================================ */
 body {
   font-family: Arsenal, sans-serif, "Great Vibes", cursive;
-  font-size: 14px;
+  font-size: 12px;
   color: #242124;
   background-color: #FFFFFF;
 }
@@ -113,8 +113,8 @@ section:not(:last-child) {
 
 .section__text {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.71;
+  font-size: 18px;
+  line-height: 1.61;
   letter-spacing: 0.42px;
 }
 .section__text:not(:last-child) {
@@ -137,7 +137,7 @@ section:not(:last-child) {
 .accent {
   color: #945a94;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   font-style: italic;
 }
 .accent-name {
@@ -688,6 +688,7 @@ Header
 Section HERO
 ============================== */
 .hero {
+  margin-top: 81px;
   margin-left: auto;
   margin-right: auto;
   background-color: #b8cf69;
@@ -697,11 +698,24 @@ Section HERO
   background-repeat: no-repeat;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 100%;
+    max-width: 767px;
+    max-height: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    width: 100%;
+    max-width: 1199px;
+    max-height: 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1920px;
-    height: 600px;
-    margin-top: 81px;
+    max-height: 600px;
     padding-top: 200px;
     /* padding-bottom: 200px; */
   }
@@ -719,14 +733,16 @@ Section HERO
   z-index: 2;
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) and (max-width: 1190px) {
+@media screen and (max-width: 767px) {
   .hero__title {
-    width: 70%;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
-    width: 696px;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 .hero__overlay-text {
@@ -742,6 +758,11 @@ Section HERO
 .hero:hover .hero__overlay-text {
   transform: translateY(-190%);
   color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .hero:hover .hero__overlay-text {
+    transform: translateY(-120%);
+  }
 }
 
 /* =========================
@@ -865,14 +886,26 @@ Services page
 @media screen and (max-width: 767px) {
   .services__intro {
     width: 100%;
-    max-width: 1920px;
+    max-width: 767px;
     max-height: 200px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services__intro {
+    width: 100%;
+    max-width: 1199px;
+    max-height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__intro {
+    max-width: 1920px;
+    max-height: 600px;
+  }
+}
 .services__intro-title {
-  margin-top: 20%;
-  margin-left: 20%;
-  /* text-align: center; */
+  margin-top: 40px;
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -883,8 +916,12 @@ Services page
   .services__intro-title {
     font-size: 24px;
     font-weight: 700;
-    margin-top: 20%;
-    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services__intro-title {
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 
