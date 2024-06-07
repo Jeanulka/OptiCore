@@ -130,11 +130,6 @@ section:not(:last-child) {
 .section__text:not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
-  .section__text {
-    font-size: 14px;
-  }
-}
 
 .visually-hidden {
   position: absolute;
@@ -202,6 +197,12 @@ section:not(:last-child) {
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-none {
+    display: none;
+  }
 }
 
 /* =======================
@@ -872,13 +873,16 @@ CLIENTS section
   margin-bottom: 30px;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__container .link {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 120px) / 3);
+  }
+}
+
 .clients__logo {
   display: inline-block;
-}
-@media screen and (max-width: 767px) {
-  .clients__logo {
-    display: none;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__logo {
@@ -1013,16 +1017,32 @@ Education page
   flex-wrap: wrap;
   margin-bottom: -30px;
 }
-.courses__list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .courses__list {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .courses__list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 .courses__list-item {
-  width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
   background-color: #FFFFFF;
   border: 2px solid #BE95BE;
   border-radius: 20px;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .courses__list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .courses__list-item {
+    width: 100%;
+  }
 }
 
 .courses__link {
@@ -1051,7 +1071,7 @@ Education page
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 1.08px;
