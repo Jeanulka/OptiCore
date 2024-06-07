@@ -13,25 +13,22 @@
     background-color: $background-backdrop-menu-color;
     z-index: 10;
 
-
     transform: translateX(100%);
-
     transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+& .mobile-menu__button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
 
 .mobile-menu__container.is-open {
     transform: translateX(0);
 }
 
-    @media screen and (max-width: 767px) {
 
-        .header__button .btn__book {
-            display: none;
-    }
-
-    .header .container {
-        min-height: 80px;
-    }
+@media screen and (max-width: 767px) {
 
     .main-nav__menu-link {
         padding-top: 10px;
@@ -41,41 +38,9 @@
     .main-nav__menu-link.mail {
         padding-top: 30px;
         text-transform: none;
-        }
+    }
  
 }
 
-.mobile-menu__container .mobile-menu__button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
 
-.mobile-menu__button {
-    min-height: 40px;
-    min-width: 40px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: transparent;
-
-    cursor: pointer;
-
-    border: none;
-    border-radius: 50%;
-    outline: none;
-
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-}
-
-.mobile-menu__button:hover .button__icon,
-.mobile-menu__button:focus .button__icon {
-    fill: $primary-color;
-}

@@ -9,6 +9,10 @@
     letter-spacing: 0.78px;
     line-height: 0.7px;
 
+        @media screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+
 
     &__header-part {
     color: $background-secondary-color;
