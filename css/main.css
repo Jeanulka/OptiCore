@@ -699,6 +699,7 @@ Header
 @media screen and (max-width: 1199px) {
   .form {
     display: block;
+    max-width: 270px;
     margin-bottom: 36px;
   }
   .form__title {
@@ -713,14 +714,13 @@ Header
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    width: 100%;
   }
   .form__group:not(:last-child) {
     margin-bottom: 10px;
   }
   .form__agreement {
     width: 100%;
-    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
