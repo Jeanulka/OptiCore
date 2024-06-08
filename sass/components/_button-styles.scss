@@ -15,7 +15,9 @@
     color: $text-color;
 
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: .28px;
 
     opacity: 1;
     transform: scale(1.2);
@@ -32,22 +34,24 @@
 }
 
 .header__button .btn__book {
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: none;
-        background-color: transparent;
+
         width: 40px;
         height: 40px;
+
+        border: none;
+        background-color: transparent;    
     }
 
     @media screen and (min-width: $tablet) {    
             
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-right: 30px;
-                padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
     
     background-color: $primary-color;
         border: none;
@@ -56,7 +60,9 @@
         color: $text-color;
     
         font-weight: 700;
-        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: .28px;
+        text-transform: uppercase;
     
         opacity: 1;
         transform: scale(1.2);

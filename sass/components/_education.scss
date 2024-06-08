@@ -12,29 +12,38 @@ Education page
         display: block;
     }
 
-@media screen and (min-width: $tablet) {
-    &-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-}
-
-
-&-item {
-   
-
-@media screen and (min-width: $tablet) {
-        width: calc((100% - 60px) / 3);
-    }
-
-@media screen and (max-width: 767px) {
-        width: 100%;
-    }
-
+&-item {   
     margin-bottom: 30px;
+
     background-color: $background-color;
     border: 2px solid $dark-pink-color-accent;
     border-radius: 20px;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 60px) / 2);        
+    }
+
+@media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+}
+
+}
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+    
+    @media screen and (min-width: $desktop) {
+    &-item:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
 }
 }
 

@@ -54,5 +54,10 @@ Helping-with
     margin-right: 20px;
     rotate: 45deg;
     fill: $primary-color;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        list-style: inside;        
+    }
 }
 }

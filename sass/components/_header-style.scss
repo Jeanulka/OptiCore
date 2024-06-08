@@ -64,6 +64,10 @@ Header
 
     &__menu-list-item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 20px;
+    }
     }
 
     &__menu-list-item {

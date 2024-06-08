@@ -5,6 +5,9 @@ Services page
     padding-top: 0;
     margin-top: 81px;
 
+    @media screen and (max-width: 767px) {    
+            margin-top: 61px;
+        }
 
 &__intro {
     max-width: 1920px;
@@ -28,6 +31,8 @@ Services page
     color: $secondary-color;
 
 @media screen and (max-width: 767px) {
+    
+    margin-top: 61px;
     width: 100%;    
     max-width: 767px;
     max-height: 200px;
@@ -44,9 +49,7 @@ Services page
 }
 
 &__intro-title {
-    margin-top: auto;
-    margin-bottom: auto;
-    
+margin-top: 60px;    
     text-align: center;
     font-size: 44px;
     font-weight: 900;

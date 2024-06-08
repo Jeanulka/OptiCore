@@ -57,7 +57,6 @@ body {
     }   
 }
 
-
 section {
     @media screen and (max-width: 1199px) {
         padding-top: 60px;
@@ -68,7 +67,6 @@ section {
         padding-top: 120px;
         padding-bottom: 120px;  
     }
-
 
 &:not(:last-child) {
     padding-bottom: 0;
@@ -135,10 +133,7 @@ section {
     color: $text-color-accent;
     font-weight: 700;
     font-size: 18px;
-    font-style: italic;
-        @media screen and (max-width: 767px) {
-                font-size: 14px;
-            }
+    font-style: italic;  
 
 &-name {
     color: $text-color-accent;
@@ -189,4 +184,5 @@ section {
 .mobile-none {
 @media screen and (max-width: 767px) {
     display: none;
-}}
+}
+}
