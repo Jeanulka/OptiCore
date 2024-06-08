@@ -179,14 +179,27 @@
 }
 
  @media screen and (max-width: 1199px) {   
+.form .mobile-none {
+        display: none;
+    }
+
 .form {
     display: block;
-    max-width: 270px;
+    max-width: 250px;
 
-    margin-bottom: 36px;
+    margin-bottom: 20px;
+
+    &__left-part,
+    &__right-part {
+        height: fit-content;
+        }
+
+    &__left-part {
+            margin-right: none;
+        }
 
     &__title {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
 
         font-weight: 700;
         font-size: $font-text-size;
@@ -232,15 +245,14 @@
     }
 
     &__group-label {
-        margin-bottom: 4px;
-
-        letter-spacing: 0.01em;
-
-        color: $text-form-label;
+        display: none;
+        // margin-bottom: 4px;
+        // letter-spacing: 0.01em;
+        // color: $text-form-label;
     }
 
     &__group-input {
-        // width: 100%;
+        width: 100%;
         // width: 270px;
         height: 40px;
 
@@ -264,8 +276,7 @@
     &__group-textarea {
         resize: none;
 
-        // width: 420px;
-        // height: 252px;
+        height: 150px;
 
         padding-top: 12px;
         padding-right: 16px;
