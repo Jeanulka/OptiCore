@@ -40,6 +40,16 @@ img {
   display: block;
 }
 
+q {
+  quotes: "“" "”";
+}
+
+q::before,
+q::after {
+  font-weight: 700;
+  font-size: 26px;
+}
+
 /* =========================================
 Загальні стилі для body та його елементів
 ============================================ */
@@ -92,7 +102,7 @@ section:not(:last-child) {
 
 .section__title {
   position: relative;
-  color: #335433;
+  color: #443d44;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -113,7 +123,7 @@ section:not(:last-child) {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 1.08px;
-  color: #335433;
+  color: #443d44;
 }
 @media screen and (max-width: 767px) {
   .section__subtitle {
@@ -125,7 +135,7 @@ section:not(:last-child) {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.61;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.38px;
 }
 .section__text:not(:last-child) {
   margin-bottom: 30px;
@@ -161,6 +171,13 @@ section:not(:last-child) {
     font-size: 28px;
   }
 }
+.accent-bold {
+  font-weight: 700;
+}
+.accent-call {
+  font-weight: 700;
+  font-size: 28px;
+}
 .accent-slogan {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -187,11 +204,8 @@ section:not(:last-child) {
 }
 
 .frame {
-  margin-left: 30px;
-  margin-right: 20px;
-  padding: 30px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 767px) {
@@ -288,7 +302,7 @@ Header
 .main-nav__menu-link, .main-nav__submenu-link {
   line-height: 1.2;
   letter-spacing: 0.28px;
-  color: #335433;
+  color: #443d44;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-nav__menu-list-item:focus .main-nav__menu-link, .main-nav__menu-list-item:hover .main-nav__menu-link, .main-nav__menu-list-item:active .main-nav__menu-link {
@@ -420,6 +434,15 @@ Header
 
 .header .logo {
   display: flex;
+}
+
+.logo__BBA {
+  color: #BE95BE;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 0.7px;
 }
 
 .footer .logo__sup {
@@ -614,7 +637,7 @@ Header
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #335433;
+  color: #443d44;
 }
 .form__left-part {
   margin-right: 36px;
@@ -717,7 +740,7 @@ Header
     font-size: 12px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #335433;
+    color: #443d44;
   }
   .form__group {
     position: relative;
@@ -845,32 +868,29 @@ Section HERO
   margin-top: 81px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #b8cf69;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)), url(../images/DesctopOptiNotebook.jpg);
-  background-position: center;
-  background-size: cover;
+  max-height: fit-content;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/svg/hero_pic.svg);
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .hero {
     margin-top: 61px;
     width: 100%;
     max-width: 767px;
-    max-height: 200px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     width: 100%;
     max-width: 1199px;
-    max-height: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1920px;
-    max-height: 600px;
     padding-top: 200px;
     /* padding-bottom: 200px; */
   }
@@ -878,26 +898,22 @@ Section HERO
 .hero__title {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #242124;
   z-index: 2;
   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .hero__title {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 64px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 120px;
   }
 }
 .hero__overlay-text {
@@ -912,7 +928,7 @@ Section HERO
 }
 .hero:hover .hero__overlay-text {
   transform: translateY(-190%);
-  color: #FFFFFF;
+  color: #242124;
 }
 @media screen and (max-width: 767px) {
   .hero:hover .hero__overlay-text {
@@ -923,12 +939,6 @@ Section HERO
 /* =========================
 About US
 ===========================*/
-/*  About US section */
-.about-us {
-  position: relative;
-  overflow: hidden;
-}
-
 /* ========================
 Helping-with 
 =========================*/
@@ -958,6 +968,93 @@ Helping-with
     display: none;
     list-style: inside;
   }
+}
+
+/* =======================
+BENEFITS section 
+==========================*/
+.benefits {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/benefits_pic.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__list {
+    display: block;
+  }
+}
+.benefits__list-item {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__list-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__list-item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+.benefits__list-item {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.benefits__description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__icon {
+  margin-bottom: 20px;
+  fill: #D9DEFA;
+}
+
+.benefits__name {
+  margin-bottom: 20px;
+  color: #BE95BE;
+}
+
+.benefits__text,
+.benefits__name {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.38px;
+  text-align: center;
+}
+
+.benefits__text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* =======================
@@ -1029,27 +1126,11 @@ CEO section
 /* =========================
 Services page
 ============================ */
-.services {
-  padding-top: 0;
-  margin-top: 81px;
-}
-@media screen and (max-width: 767px) {
-  .services {
-    margin-top: 61px;
-  }
-}
 .services__intro {
-  max-width: 1920px;
-  height: 400px;
+  margin-top: 81px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #b8cf69;
-  background-image: linear-gradient(to top, rgb(208, 208, 208), rgba(208, 208, 208, 0)), url(../images/BusinessImg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 1920px;
   color: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
@@ -1057,14 +1138,12 @@ Services page
     margin-top: 61px;
     width: 100%;
     max-width: 767px;
-    max-height: 200px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .services__intro {
     width: 100%;
     max-width: 1199px;
-    max-height: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1073,30 +1152,112 @@ Services page
     max-height: 600px;
   }
 }
-.services__intro-title {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 @media screen and (max-width: 767px) {
-  .services__intro-title {
-    font-size: 24px;
-    font-weight: 700;
+  .services__list {
+    display: block;
+  }
+}
+.services__list-item {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .services__list-item {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .services__intro-title {
-    font-size: 24px;
-    font-weight: 700;
+  .services__list-item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .services__list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
 
+.services__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__list-item:hover,
+.services__list-item:focus {
+  background-color: #D9DEFA;
+}
+
+.services__description {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  color: #BE95BE;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__description:hover,
+.services__description:focus {
+  color: #242124;
+}
+
+.services__name {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.38px;
+  text-align: center;
+}
+
 /* ===========================
-Optimization-bp
+Realisation
+===============================*/
+.section__text-number {
+  position: absolute;
+  color: rgba(216, 191, 216, 0.4);
+  font-size: 70px;
+  font-weight: 700;
+  z-index: -1;
+}
+
+/* ===========================
+Business consultation
+===============================*/
+.business-consultation {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/images/business-consultation.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ===========================
+business-analasys
+===============================*/
+.business-analasys {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/images/business-analasys.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ===========================
+Business-processes
 ===============================*/
 .optimization-bp__list-item {
   list-style: inside;
@@ -1104,8 +1265,47 @@ Optimization-bp
 }
 
 /* ===========================
+fin-models
+===============================*/
+.fin-models {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/images/fin-plan.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ===========================
+Business plan section
+===============================*/
+.business-plan {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/images/business-woman.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ===========================
+Franch-audit section
+===============================*/
+.franch-audit {
+  max-height: fit-content;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/franch-audit.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ===========================
 Trainings  
 ===============================*/
+.trainings {
+  max-height: fit-content;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/tranings.svg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .trainings__list {
   margin-bottom: 30px;
 }
@@ -1118,7 +1318,14 @@ Trainings
 /* =========================
 Education page
 ============================ */
-/* Courses section */
+/* Businessboost-academy section */
+.businessboost-academy {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/svg/eaBONvmZxCoyMezoEw73.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .courses__list {
   display: flex;
   flex-wrap: wrap;
@@ -1167,6 +1374,26 @@ Education page
   margin: 10px;
 }
 
+.courses__author-description {
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.courses__author-name {
+  padding-top: 5px;
+  font-weight: 700;
+}
+
+.courses__author-description,
+.courses__author-name {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.6px;
+  color: #242124;
+  font-style: italic;
+}
+
 .courses__description-name {
   color: #FFFFFF;
   height: 96px;
@@ -1180,7 +1407,7 @@ Education page
   font-size: 30px;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.6px;
 }
 
 .courses__description-text {
@@ -1191,7 +1418,7 @@ Education page
   font-size: 18px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.6px;
   color: #242124;
 }
 
@@ -1220,7 +1447,7 @@ Education page
   padding-left: 30px;
   font-size: 24px;
   font-weight: 700;
-  color: #335433;
+  color: #443d44;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }

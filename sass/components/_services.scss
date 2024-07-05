@@ -2,75 +2,161 @@
 Services page
 ============================ */
 .services {
-    padding-top: 0;
-    margin-top: 81px;
-
-    @media screen and (max-width: 767px) {    
-            margin-top: 61px;
-        }
 
 &__intro {
-    max-width: 1920px;
-    height: 400px;
+    margin-top: 81px;
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $green-color-accent;
-    background-image: linear-gradient(to top, rgba(208, 208, 208, 1), rgba(208, 208, 208, 0.0)),
-        url(../images/BusinessImg.jpg);
+    max-width: 1920px;
 
-
-    background-position: center;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    // padding-bottom: 20px;
     color: $secondary-color;
+
+    // background-image: linear-gradient(to top, rgba(208, 208, 208, 1), rgba(208, 208, 208, 0.0)),
+    //     url(../images/BusinessImg.jpg);
+
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+
 
 @media screen and (max-width: 767px) {
     
     margin-top: 61px;
     width: 100%;    
     max-width: 767px;
-    max-height: 200px;
 }
+
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
     max-width: 1199px;
-    max-height: 200px;
 }
+
 @media screen and (min-width: $desktop) {
     max-width: 1920px;
     max-height: 600px;
 }
 }
+}
 
-&__intro-title {
-margin-top: 60px;    
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
 
     @media screen and (max-width: 767px) {
-            font-size: 24px;
-            font-weight: 700;
+        display: block;
+    }
+
+    &-item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: calc((100% - 60px) / 2);
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: calc((100% - 60px) / 3);
+        }
+
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-            font-size: 24px;
-            font-weight: 700;
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &-item:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
     }
 }
+
+.services__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__list-item:hover,
+.services__list-item:focus {
+    background-color: $pic-color;
+}
+
+.services__description {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; 
+
+    color: $dark-pink-color-accent;
+       
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__description:hover,
+.services__description:focus {
+    color: $text-color;
+}
+
+.services__name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.38px;
+
+    text-align: center;
 }
 
 /* ===========================
-Optimization-bp
+Realisation
+===============================*/
+.section__text-number {
+    position: absolute;
+
+    color: rgb(216, 191, 216, 0.4);
+    font-size: 70px;
+    font-weight: 700;
+    z-index: -1;
+}
+
+/* ===========================
+Business consultation
+===============================*/
+
+.business-consultation {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.4)),
+            url(/images/business-consultation.png);
+        
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+/* ===========================
+business-analasys
+===============================*/
+
+.business-analasys {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+            url(/images/business-analasys.png);
+    
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ===========================
+Business-processes
 ===============================*/
 .optimization-bp__list-item {
     list-style: inside;
@@ -79,8 +165,60 @@ Optimization-bp
 }
 
 /* ===========================
+fin-models
+===============================*/
+
+.fin-models {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url(/images/fin-plan.png);
+
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ===========================
+Business plan section
+===============================*/
+.business-plan {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url(/images/business-woman.png);
+    
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ===========================
+Franch-audit section
+===============================*/
+
+.franch-audit {
+    max-height: fit-content;
+    
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)),
+        url(/images/franch-audit.png);
+    
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+
+/* ===========================
 Trainings  
 ===============================*/
+
+.trainings {
+    max-height: fit-content;
+    
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url(/images/tranings.svg);
+    
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
 
 .trainings__list {
     margin-bottom: 30px;

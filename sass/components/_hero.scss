@@ -7,33 +7,31 @@ Section HERO
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $green-color-accent;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.0)),
-        url(../images/DesctopOptiNotebook.jpg);
+    max-height: fit-content;
 
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)),
+        url(/images/svg/hero_pic.svg);
+
+    background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
 
-    text-align: center;
+    text-align: left;
 
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         margin-top: 61px;
         
         width: 100%;
         max-width: 767px;
-        max-height: 200px;
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: 100%;
         max-width: 1199px;
-        max-height: 200px;
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 1920px;
-        max-height: 600px;   
 
         padding-top: 200px;
     /* padding-bottom: 200px; */
@@ -42,25 +40,22 @@ Section HERO
     &__title {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
-    font-size: 54px;
-    font-weight: 900;
+    // margin-bottom: 50px;
+    font-size: 120px;
+    font-weight: 400;
 
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-
+    line-height: 1;
+    letter-spacing: 2px;
+    color: $text-color;
+  
     @media screen and (max-width: 767px) {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 64px;
         }
     
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 120px;
         }
 
-    color: $secondary-color;
     z-index: 2;
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -79,7 +74,7 @@ Section HERO
 
 &:hover &__overlay-text {
     transform: translateY(-190%);    
-    color: $secondary-color;
+    color: $text-color;
     
     @media screen and (max-width: 767px) {
     transform: translateY(-120%);

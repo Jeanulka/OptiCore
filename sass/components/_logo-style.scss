@@ -35,7 +35,17 @@
     display: flex;          
 }
 
+.logo__BBA {
+    color: $dark-pink-color-accent;
+    font-family: $font-italic;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 0.7px;
+}
+
 .footer .logo__sup {
     color: $secondary-color;
 }
+
 

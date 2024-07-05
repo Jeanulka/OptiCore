@@ -11,12 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
 
     <link
       rel="stylesheet"
@@ -37,9 +31,11 @@
             </button>
           <!-- Header Logo -->
           <div class="logo__wraper">
-
-            <a href="/" class="logo__BBA">BusinessBoost Academy</a>
-            
+            <a href="/" class="logo">
+              <span class="logo__header-part">Opti</span>
+              <p>Core</p>
+              <p>R</p>
+            </a>
           </div>
 
           <!-- Header Menu -->
@@ -50,55 +46,58 @@
               >
             </li>
             <li class="main-nav__menu-list-item">
-              <a href="./services.html" class="link main-nav__menu-link">Послуги</a>
+              <a href="./services.html" 
+              class="link main-nav__menu-link current-page">Послуги</a>
               <ul class="main-nav__submenu-list">
+
                 <li class="main-nav__submenu-list-item">
                   <a
-                    href="./business-consultation.html"
+                    href="./services-business-consultation.html"
                     class="link main-nav__submenu-link"
                     >Консультації</a
-                  >
-                </li>
-                <li class="main-nav__submenu-list-item">
-                  <a
-                    href="./business-analasys.html"
-                    class="link main-nav__submenu-link"
-                    >Аналіз бізнесу</a
-                  >
-                </li>
-                <li class="main-nav__submenu-list-item">
-                  <a
-                    href="./business-processes.html"
-                    class="link main-nav__submenu-link"
-                    >Опис та оптимізація бізнес-процесів</a
                   >
                 </li>
 
                 <li class="main-nav__submenu-list-item">
                   <a
-                    href="./fin-models.html"
+                    href="./services-business-analasys.html"
+                    class="link main-nav__submenu-link"
+                    >Аналіз бізнесу</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-processes.html"
+                    class="link main-nav__submenu-link"
+                    >Опис та оптимізація бізнес-процесів</a
+                  >
+                </li>                
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-fin-models.html"
                     class="link main-nav__submenu-link"
                     >Фінансове моделювання</a
                   >
                 </li>
                 <li class="main-nav__submenu-list-item">
                   <a
-                    href="./business-plan.html"
+                    href="./services-business-plan.html"
                     class="link main-nav__submenu-link"
                     >Написання бізнес-планів</a
                   >
                 </li>
                 <li class="main-nav__submenu-list-item">
                   <a
-                    href="./franch-audit.html"
+                    href="./services-franch-audit.html"
                     class="link main-nav__submenu-link"
                     >Аудит франшизи</a
                   >
                 </li>
-
-                <li class="main-nav__submenu-list-item">
+                    <li class="main-nav__submenu-list-item">
                   <a
-                    href="./trainings.html"
+                    href="./services-trainings.html"
                     class="link main-nav__submenu-link"
                     >Тренінги</a
                   >
@@ -106,7 +105,7 @@
               </ul>
             </li>
             <li class="main-nav__menu-list-item">
-              <a href="./education.html" class="link main-nav__menu-link current-page">Навчання</a>
+              <a href="./education.html" class="link main-nav__menu-link">Навчання</a>
               <ul class="main-nav__submenu-list">
                 <li class="main-nav__submenu-list-item">
                   <a
@@ -115,10 +114,45 @@
                     >BusinessBoost Academy<sup class="sup">TM</sup></a
                   >
                 </li>
-
+           
+                <!-- <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./knowledgebase.html#Knowledgebase"
+                    class="link main-nav__submenu-link"
+                    >База знань</a
+                  >
+                </li> -->
               </ul>
             </li>
 
+            <!-- <li class="main-nav__menu-list-item">
+              <a href="./initiatives.html" class="link main-nav__menu-link"
+                >Ініціативи</a
+              >
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./initiatives.html#Pshycho"
+                    class="link main-nav__submenu-link"
+                    >Бізнес-психологія</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./initiatives.html#womens-business"
+                    class="link main-nav__submenu-link"
+                    >Бізнес для жінок і про жінок</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./initiatives.html#womens-business"
+                    class="link main-nav__submenu-link"
+                    >Бізнеc-підтримка для військових</a
+                  >
+                </li>
+              </ul>
+            </li> -->
 
             <li class="main-nav__menu-list-item">
               <a href="https://blog.liga.net/user/zkudrytska/profile" class="link main-nav__menu-link" target="_blank"
@@ -130,7 +164,14 @@
               <a href="#contacts-info" class="link main-nav__menu-link">Контакти</a>
             </li>
           </ul>
+          <div class="header__button">
+              <button type="button" class="btn__book" data-modal-open>
+                <span class="btn__book-desctop">Замовити</span>
+              <svg class="button__icon mobile-menu__button" width="24" height="24"
+              ><use href="./images/svg/symbol-defs.svg#icon-message"></use></svg>
+            </button>         
 
+          </div>
       </nav>
 
         <!-- Mobile Menu -->
@@ -146,10 +187,10 @@
                 >Про нас</a>
             </li>
             <li>
-              <a href="./services.html" class="link main-nav__menu-link">Послуги</a>              
+              <a href="./services.html" class="link main-nav__menu-link current-page">Послуги</a>              
             </li>
             <li>
-              <a href="./education.html" class="link main-nav__menu-link current-page">Навчання</a>              
+              <a href="./education.html" class="link main-nav__menu-link">Навчання</a>              
             </li>
             <!-- <li>
               <a href="./initiatives.html" class="link main-nav__menu-link"
@@ -183,170 +224,117 @@
       </nav>     
         
 
-        
+        <!-- Модальне вікно -->
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p class="form__title">Замовити бізнес-консультацію</p>
+
+            <form class="form" autocomplete="off">
+              <div class="form__left-part">
+                <div class="form__group">
+                  <label class="form__group-label">Ваше Ім&#8216;я</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form__group-input"
+                    placeholder=" "
+                  />
+
+                  <svg class="form__group-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__group-label">Номер телефону</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    class="form__group-input"
+                    placeholder=" "
+                  />
+                  <svg class="form__group-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__group-label">Ваша електронна пошта</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form__group-input"
+                    placeholder=" "
+                  />
+                  <svg class="form__group-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="form__group">
+                  <label class="form__group-label">Назва компанії</label>
+                  <input
+                    type="text"
+                    name="company"
+                    class="form__group-input"
+                    placeholder="Вкажіть назву компанії за бажанням"
+                  />
+                </div>
+              </div>
+
+              <div class="form__right-part form__group">
+                <label class="form__group-label"
+                  >Напишіть коротко суть Вашого звернення</label
+                >
+                <textarea
+                  class="form__group-textarea"
+                  name="comment"
+                  rows="20"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+            </form>
+
+            <form class="form__agreement" autocomplete="off">
+              <label class="form__agreement-checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  value="Даю згоду на обробку персональних даних згідно Політики конфіденційності"
+                />
+                <span class="agreement"
+                  >Я погоджуюся на обробку моїх персональних даних відповідно до
+                  <a href="./privacy-notice.html" class="agreement__link">Політики конфіденційності</a> 
+                  та <a href="./privacy-notice.html" class="agreement__link">Умов використання</a>
+                </span>
+                <svg class="form__agreement-checkbox-icon" width="16" height="15">
+                  <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </label>
+          
+              <button type="submit" class="btn__send">Відправити</button>
+            </form>
+
+            <button type="button" class="btn__close" data-modal-close>
+              <!-- <svg class="icon close" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+                </svg> -->
+            </button>
+          </div>
+        </div>
+        <!-- Модальне вікно end -->
       </div>
     </header>
 
     <main>
-      <!-- BusinessBoost Academy section -->
-      <section class="businessboost-academy">
-
-        <!-- Courses -->
-        <div class="container">
-          <h1 class="hero__title">Become more <span class="accent-primary">successful </span> with us</h1>
-          <p class="section__text mobile-none">
-            <span class="accent-name">BusinessBoost Academy<sup class="logo__sup">TM</sup></span> - це
-            бізнес-освіта для підприємців та тих, хто бажає таким бути. 
-          </p>
-          <p class="section__text mobile-none">Дані
-            курси є невеликими за обсягом і вони допоможуть вам пізнати свій бізнес з глибини, порозумітися на бізнес-процесах, бізнес-аналізі, управлінні фінансами
-            та плануванні фінансових потоків тощо. 
-          
-            Ви отримаєте дієві інструменти, які вже зможете успішно використовувати в своїй роботі.</p>
-          <p class="section__text">
-           <span class="accent-slogan">Замовляй свій курс та ставай успішнішим за інших вже сьогодні! </span> 
-          </p>      
-          <h2 class="section__title">Наші курси</h2>    
-          <ul class="courses__list">
-            <li class="courses__list-item">
-              <a
-                class="link courses__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <div class="courses__description">
-                  <h2 class="courses__description-name">
-                    Усуваємо бізнес-проблеми
-                  </h2>
-                  <div class="courses__author">
-                    <p class="courses__author-description">Автор курсу</p>
-                    <p class="courses__author-name">Жанна Кудрицька</p>
-                  </div>
-                  <p class="courses__description-text">
-                    Бізнес-проблеми: від виявлення до вирішення. Інструменти,
-                    які допоможуть підприємцю вчасно ідентифікувати та усувати
-                    бізнес-проблеми
-                  </p>
-
-                  <div class="courses__price">
-                    <p class="courses__price-previous">1 800 грн.</p>
-                    <p class="courses__price-actual">599 грн.</p>
-                  </div>
-                  <p class="courses__in-progress">На старті!</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="courses__list-item">
-              <a
-                class="link courses__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <div class="courses__description">
-                  <h2 class="courses__description-name">
-                    Опис бізнес-процесів
-                  </h2>
-                  <p class="courses__description-text">
-                    Як підприємцю налагодити роботу в компанії, щоб всі
-                    бізнес-процеси працювали системно і на результат
-                  </p>
-
-                  <div class="courses__price">
-                    <p class="courses__price-previous"></p>
-                    <p class="courses__price-actual"></p>
-                  </div>
-                  <p class="courses__in-progress">Курс в розробці</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="courses__list-item">
-              <a
-                class="link courses__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <div class="courses__description">
-                  <h2 class="courses__description-name">
-                    Оптимізація бізнес-процесів
-                  </h2>
-                  <p class="courses__description-text">
-                    Як оптимізувати бізнес-процеси в своїй компанії вже зараз,
-                    щоб досягти ефективності
-                  </p>
-
-                  <div class="courses__price">
-                    <p class="courses__price-previous"></p>
-                    <p class="courses__price-actual"></p>
-                  </div>
-                  <p class="courses__in-progress">Курс в розробці</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="courses__list-item">
-              <a
-                class="link courses__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <div class="courses__description">
-                  <h2 class="courses__description-name">
-                    Ключ до успіху вашого бізнесу
-                  </h2>
-                  <p class="courses__description-text">
-                    Плануємо свої фінансові потоки, створюємо платіжний календар
-                    та уникаємо касових розривів, вивільняємо резерви для росту
-                    бізнесу
-                  </p>
-
-                  <div class="courses__price">
-                    <p class="courses__price-previous"></p>
-                    <p class="courses__price-actual"></p>
-                  </div>
-                  <p class="courses__in-progress">Курс в розробці</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="courses__list-item">
-              <a
-                class="link courses__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <div class="courses__description">
-                  <h2 class="courses__description-name">
-                    Розпаковка франшизи
-                  </h2>
-                  <div class="courses__author">
-                    <p class="courses__author-description">Автор курсу</p>
-                    <p class="courses__author-name">Інна Григоренко</p>
-                  </div>
-                  <p class="courses__description-text">
-                    Якщо ти плануєш купити франшизу та запустити успішний бізнес - 
-                    ти просто маєш знати про все, що тобі повинен дати фрначайзер в пакеті документів.
-                     <p class="courses__description-text">
-                    Цей курс просто для тебе! Ти зможеш сам розібратися в документах твого пакету, провести аудит франшизи і запустити свою справу успішно!</p>
-                  </p>
-
-                  <div class="courses__price">
-                    <p class="courses__price-previous"></p>
-                    <p class="courses__price-actual"></p>
-                  </div>
-                  <p class="courses__in-progress">Курс в розробці</p>
-                </div>
-              </a>
-            </li>
-
-          </ul>
+      <!-- services section -->
+      <section class="business-consultation">
+        <div class="container"> 
+          <h1 class="hero__title"><span class="accent-primary">Бізнес-</span>консультації</h1>
         </div>
+
+
       </section>
     </main>
 
