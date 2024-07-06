@@ -20,10 +20,7 @@ Services page
     // background-size: cover;
     // background-repeat: no-repeat;
 
-
-
-@media screen and (max-width: 767px) {
-    
+@media screen and (max-width: 767px) {    
     margin-top: 61px;
     width: 100%;    
     max-width: 767px;
@@ -134,7 +131,8 @@ Business consultation
 ===============================*/
 
 .business-consultation {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.4)),
+
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.6)),
             url(/images/business-consultation.png);
         
     background-position: right;
@@ -142,8 +140,16 @@ Business consultation
     background-repeat: no-repeat; 
 }
 
+.part {
+    width: 768px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            }
+}
+
 /* ===========================
-business-analasys
+Business-analasys
 ===============================*/
 
 .business-analasys {
@@ -153,6 +159,10 @@ business-analasys
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.section__text.list {
+    margin-bottom: 5px;
 }
 
 /* ===========================
@@ -170,7 +180,7 @@ fin-models
 
 .fin-models {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url(/images/fin-plan.png);
+        url(/images/svg/Diagrams.svg);
 
     background-position: right;
     background-size: contain;
@@ -182,7 +192,7 @@ Business plan section
 ===============================*/
 .business-plan {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-            url(/images/business-woman.png);
+            url(/images/working.png);
     
     background-position: right;
     background-size: contain;
