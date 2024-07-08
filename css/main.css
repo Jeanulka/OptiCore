@@ -157,26 +157,17 @@ section:not(:last-child) {
 .accent {
   color: #945a94;
   font-weight: 700;
-  font-size: 18px;
-  font-style: italic;
+  font-size: 20px;
 }
-.accent-name {
+.accent-big {
   color: #945a94;
   font-weight: 700;
   font-size: 34px;
-  font-style: italic;
 }
 @media screen and (max-width: 767px) {
-  .accent-name {
+  .accent-big {
     font-size: 28px;
   }
-}
-.accent-bold {
-  font-weight: 700;
-}
-.accent-call {
-  font-weight: 700;
-  font-size: 28px;
 }
 .accent-slogan {
   margin-top: 70px;
@@ -202,6 +193,18 @@ section:not(:last-child) {
   color: #d8bfd8;
   font-weight: 700;
 }
+.accent-white {
+  color: #FFFFFF;
+}
+
+.block {
+  padding: 50px;
+  border-radius: 40px;
+  background-color: #D9DEFA;
+  color: #242124;
+  font-size: 24px;
+  font-weight: 700;
+}
 
 .frame {
   border-radius: 4px;
@@ -222,9 +225,9 @@ Header
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 10;
-  border-bottom: 1px solid #f9f4f8;
+  border-bottom: 4px solid #f9f4f8;
 }
 .header .container {
   display: flex;
@@ -444,6 +447,12 @@ Header
   letter-spacing: 0.5px;
   line-height: 0.7px;
 }
+@media screen and (max-width: 767px) {
+  .logo__BBA {
+    font-size: 30px;
+    letter-spacing: 0.1px;
+  }
+}
 
 .footer .logo__sup {
   color: #FFFFFF;
@@ -457,9 +466,8 @@ Header
   padding-bottom: 10px;
   padding-right: 52px;
   padding-left: 52px;
-  background-color: #d8bfd8;
+  background-color: rgba(216, 191, 216, 0.8);
   border: none;
-  border-radius: 50px;
   color: #242124;
   font-weight: 700;
   font-size: 18px;
@@ -493,9 +501,8 @@ Header
     padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
-    background-color: #d8bfd8;
+    background-color: rgba(216, 191, 216, 0.8);
     border: none;
-    border-radius: 50px;
     color: #242124;
     font-weight: 700;
     line-height: 1.2;
@@ -868,8 +875,9 @@ Section HERO
   margin-top: 81px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 4px solid #d8bfd8;
   max-height: fit-content;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/svg/hero_pic.svg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/images/svg/hero_pic.svg);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -936,9 +944,6 @@ Section HERO
   }
 }
 
-/* =========================
-About US
-===========================*/
 /* ========================
 Helping-with 
 =========================*/
@@ -1132,6 +1137,7 @@ Services page
   margin-right: auto;
   max-width: 1920px;
   color: #FFFFFF;
+  border-bottom: 4px solid #BE95BE;
 }
 @media screen and (max-width: 767px) {
   .services__intro {
@@ -1240,7 +1246,7 @@ Realisation
 Business consultation
 ===============================*/
 .business-consultation {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/images/business-consultation.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/images/business-consultation.png);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1259,7 +1265,7 @@ Business consultation
 Business-analasys
 ===============================*/
 .business-analasys {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/images/business-analasys.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/images/business-analasys.png);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1285,6 +1291,7 @@ fin-models
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
+  border-bottom: 4px solid #f9f4f8;
 }
 
 /* ===========================
@@ -1300,14 +1307,6 @@ Business plan section
 /* ===========================
 Franch-audit section
 ===============================*/
-.franch-audit {
-  max-height: fit-content;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/franch-audit.png);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 /* ===========================
 Trainings  
 ===============================*/
@@ -1577,10 +1576,10 @@ Education page
 }
 .courses__list-item {
   margin-bottom: 30px;
+  outline: 2px solid #BE95BE;
+  border-radius: 4px;
   background-color: #FFFFFF;
-  border: 2px solid #BE95BE;
-  border-radius: 20px;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .courses__list-item {
@@ -1609,11 +1608,26 @@ Education page
 }
 
 .courses__link {
-  display: block;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  height: 400px;
 }
 
-.courses__author-description {
+.courses__author,
+.courses__author-name,
+.courses__author-position,
+.courses__duration {
+  padding-left: 10px;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  color: #242124;
+  font-style: italic;
+}
+
+.courses__author {
   padding-top: 10px;
   font-weight: 400;
 }
@@ -1623,24 +1637,24 @@ Education page
   font-weight: 700;
 }
 
-.courses__author-description,
-.courses__author-name {
-  padding-left: 10px;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.6px;
-  color: #242124;
-  font-style: italic;
+.courses__author-position {
+  padding-top: 5px;
+  font-weight: 400;
+  color: #757575;
 }
 
-.courses__description-name {
+.courses__duration {
+  margin-bottom: 10px;
+}
+
+.courses__name {
   color: #FFFFFF;
   height: 96px;
   padding-top: 10px;
   padding-left: 5px;
   padding-bottom: 15px;
   padding-right: 5px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 4px 4px 4px 4px;
   background-color: #b8cf69;
   text-align: center;
   font-size: 30px;
@@ -1649,7 +1663,7 @@ Education page
   letter-spacing: 0.6px;
 }
 
-.courses__description-text {
+.courses__text {
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1661,34 +1675,29 @@ Education page
   color: #242124;
 }
 
-.courses__price {
+.courses__add-info {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
-.courses__price-previous {
+.courses__ready {
+  padding-left: 10px;
   font-weight: 700;
-  font-size: 16px;
-  padding-left: 30px;
-  text-decoration: line-through;
-}
-
-.courses__price-actual {
-  padding-left: 30px;
-  font-weight: 700;
-  font-size: 30px;
-  font-style: italic;
-  color: hsl(335, 97%, 45%);
-}
-
-.courses__in-progress {
-  padding-left: 30px;
   font-size: 24px;
+  font-style: italic;
+  color: #BE95BE;
+}
+
+.courses__price {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 30px;
   font-weight: 700;
-  color: #443d44;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  font-style: italic;
 }
 
 .courses__list-item:hover,
@@ -1798,10 +1807,11 @@ Footer
 .footer__documents {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .footer__document {
-  width: calc((100% - 160px) / 2);
+  width: calc((100% - 240px) / 3);
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.71;

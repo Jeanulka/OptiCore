@@ -8,10 +8,11 @@ Services page
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 1920px;
-
     // padding-bottom: 20px;
+
+    max-width: 1920px;
     color: $secondary-color;
+    border-bottom: 4px solid $dark-pink-color-accent;
 
     // background-image: linear-gradient(to top, rgba(208, 208, 208, 1), rgba(208, 208, 208, 0.0)),
     //     url(../images/BusinessImg.jpg);
@@ -132,7 +133,7 @@ Business consultation
 
 .business-consultation {
 
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.6)),
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
             url(/images/business-consultation.png);
         
     background-position: right;
@@ -153,7 +154,7 @@ Business-analasys
 ===============================*/
 
 .business-analasys {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
             url(/images/business-analasys.png);
     
     background-position: right;
@@ -185,6 +186,8 @@ fin-models
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
+
+    border-bottom: 4px solid $background-backdrop-menu-color;
 }
 
 /* ===========================
@@ -204,14 +207,14 @@ Franch-audit section
 ===============================*/
 
 .franch-audit {
-    max-height: fit-content;
+    // max-height: fit-content;
     
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)),
-        url(/images/franch-audit.png);
+    // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)),
+    //     url(/images/franch-audit.png);
     
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;    
+    // background-position: right;
+    // background-size: contain;
+    // background-repeat: no-repeat;    
 }
 
 
