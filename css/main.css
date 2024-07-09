@@ -193,8 +193,8 @@ section:not(:last-child) {
   color: #d8bfd8;
   font-weight: 700;
 }
-.accent-white {
-  color: #FFFFFF;
+.accent-primary-dark {
+  color: #945a94;
 }
 
 .block {
@@ -979,7 +979,7 @@ Helping-with
 BENEFITS section 
 ==========================*/
 .benefits {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/benefits_pic.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/jpg/benefits_pic.jpg);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1265,7 +1265,7 @@ Business consultation
 Business-analasys
 ===============================*/
 .business-analasys {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/images/business-analasys.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/images/jpg/business-analasys.jpg);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
